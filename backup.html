@@ -1,0 +1,1560 @@
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v8.0'
+        });
+    };
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="874869769239632" theme_color="#F36427"
+    logged_in_greeting="Përshëndetje! Si mund të ju ndihmojmë?"
+    logged_out_greeting="Përshëndetje! Si mund të ju ndihmojmë?">
+</div>
+<!-- ########################### -->
+<style type="text/css">
+    .page-main {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .columns .column.main {
+        padding: 0;
+    }
+
+    #banner-slider-demo-22 h5 {
+        font-size: 27px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: -.01em;
+        margin: 0;
+        margin-bottom: 0;
+        color: #444;
+    }
+
+    #banner-slider-demo-22 h2 {
+        font-size: 60px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: -.05em;
+        margin: 0;
+        margin-left: -3px;
+        margin-bottom: 7px;
+        color: #222529;
+    }
+
+    #banner-slider-demo-22 p {
+        margin: 0;
+    }
+
+    #banner-slider-demo-22 a.btn {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #222529;
+        margin-top: 30px;
+        padding: 20px 47px;
+    }
+
+    @media (max-width: 991px) {
+        #banner-slider-demo-22 h5 {
+            font-size: 20px;
+        }
+
+        #banner-slider-demo-22 h2 {
+            font-size: 36px;
+        }
+    }
+
+    .banner-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-thumbs-container {
+        position: absolute;
+        width: 100%;
+        text-align: right;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .owl-thumbs .owl-thumb-item {
+        display: block;
+        margin-left: auto;
+        border: 0;
+        background: transparent;
+        padding-right: 35px;
+        margin-bottom: 12px;
+        text-align: right;
+        color: #171f2f;
+        font-size: 17px;
+        white-space: nowrap;
+        font-weight: 600;
+        height: auto;
+        position: relative;
+        pointer-events: all;
+    }
+
+    .owl-thumbs .owl-thumb-item.active {
+        color: #ff6840;
+    }
+
+    .owl-thumbs .owl-thumb-item:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        border-top: 2px solid;
+        width: 16px;
+    }
+
+    .owl-bottom-narrow .owl-controls{
+        display: none;
+    }
+    .home-ads .porto-ibanner-desc {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: between;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: initial;
+    }
+
+    .home-ads .porto-ibanner-desc .porto-ibanner-title {
+        font-size: 35px;
+        line-height: 1.2;
+        padding-left: 30px;
+        max-width: 33.3333%;
+        -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+        text-align: left;
+        font-weight: 700;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-order: 2;
+        order: 2;
+        font-family: 'Open Sans';
+    }
+
+    .home-ads .porto-ibanner-desc .porto-ibanner-content {
+        padding-left: 40px;
+        flex-direction: column;
+        max-width: 33.3333%;
+        -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+        text-align: left;
+        font-weight: 700;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-order: 2;
+        order: 2;
+        font-size: 13px;
+        color: #222529;
+    }
+
+    .home-ads .porto-ibanner-desc .porto-ibanner-content h4 {
+        font-size: 16px;
+        margin: 0;
+        line-height: 19px;
+        font-weight: 700;
+        color: #444
+    }
+
+    .home-ads .porto-ibanner-desc .porto-ibanner-content h4 b {
+        font-size: 1.625em;
+        line-height: 1.5;
+        display: block;
+    }
+
+    .home-ads .porto-ibanner-desc .btn {
+        padding: 10px 20px;
+        background-color: #f4631b;
+        border: 0;
+        text-transform: uppercase;
+        text-shadow: none;
+        font-family: 'Open Sans';
+        letter-spacing: 0;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+    .products-grid .product-item .product-item-info.type1{
+        /* border: 1px solid rgba(134, 134, 134, 0.226) !important;     */
+        border-radius: 4px;
+        -webkit-box-shadow: 0px 0px 15px 6px #E5E5E5; 
+        box-shadow: 0px 0px 15px 6px #E5E5E5;
+    }
+    .products-grid .product-item .product-item-info.type1:hover{
+        border-radius: 6px;
+        -webkit-box-shadow: 0px 2px 30px -2px rgba(186,186,186,0.86); 
+        box-shadow: 0px 2px 30px -2px rgba(186,186,186,0.86);
+    }
+
+    .special-offers-section .product-item-photo>a {
+        display: block;
+        overflow: hidden;
+        padding-top: 75%;
+        position: relative;
+    }
+
+    .special-offers-section .product-item-photo>a>img {
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .special-offers-section .product-item .product-reviews-summary {
+        display: none;
+    }
+
+    .special-offers-section .price-box {
+        margin-top: 5px;
+    }
+
+    @media (max-width: 575px) {
+        .home-ads .porto-ibanner-desc .porto-ibanner-title {
+            font-size: 23px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .filterproducts-tab .data.items>.item.title.active>a.data.switch {
+            border-bottom: 3px solid;
+        }
+
+        .filterproducts-tab .data.items>.item.title {
+            background: none;
+        }
+
+        .filterproducts-tab .data.items>.item.title>a.data.switch {
+            text-decoration: none;
+            border: 0;
+            padding: 0 22px 19px;
+            text-transform: none;
+            font-weight: 600;
+            display: block;
+            border-bottom: 3px solid transparent;
+        }
+
+        .filterproducts-tab .data.items>.item.content {
+            margin-top: 42px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            padding-top: 17px;
+        }
+
+        .filterproducts-tab .data.items {
+            background: none;
+        }
+    }
+
+    @media (max-width: 1220px) {
+        .filterproducts-tab .data.items>.item.title>a.data.switch {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+    .brands-slider .owl-carousel .owl-item img {
+        margin: 0 auto;
+    }
+</style>
+<div id="banner-slider-demo-11" class="owl-carousel owl-banner-carousel owl-middle-narrow">
+    <!-- <div class="item"
+            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/PROMO.jpg"}}) repeat;background-position:center;">
+            <div class="container" style="position:relative">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img_transparent.png"}}" alt="">
+            </div>
+        </div> -->
+        <div class="item"
+        style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/BLACKFRIDAY.png"}}) center center no-repeat;background-size:cover;">
+        <div class="container" style="position:relative">
+            <a
+                href="https://www.smardonline.com/material-per-zyre/material-shpenzues-per-zyre/leter-dhe-produkte-letre.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
+            </a>
+            <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
+                <div class="container" style="text-align: center;padding:0;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item"
+        style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/colop.png"}}) center center no-repeat;background-size:cover;">
+        <div class="container" style="position:relative">
+            <a href="https://www.smardonline.com/material-per-zyre/te-tjera/vule.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
+            </a>
+            <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
+                <div class="container" style="text-align: center;padding:0;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item"
+        style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/PROMO.jpg"}}) center center no-repeat;background-size:cover;">
+        <div class="container" style="position:relative">
+            <a href="https://www.smardonline.com/kompjuter-dhe-elektronike/elektronike-e-zgjuar/genius.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
+            </a>
+            <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
+                <div class="container" style="text-align: center;padding:0;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item"
+        style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/2.jpg"}}) center center no-repeat;background-size:cover;">
+        <div class="container" style="position:relative">
+            <a href="https://www.smardonline.com/kompjuter-dhe-elektronike.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
+            </a>
+            <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
+                <div class="container" style="text-align: center;padding:0;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item"
+        style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/librifinal.jpg"}}) center center no-repeat;background-size:cover;">
+        <div class="container" style="position:relative">
+            <a href="https://www.smardonline.com/libra-dhe-lule.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
+            </a>
+            <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
+                <div class="container" style="text-align: center;padding:0;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+<script type="text/javascript">
+    require([
+        'jquery',
+        'owl.carousel/owl.carousel.min'
+    ], function ($) {
+        $("#banner-slider-demo-11").owlCarousel({
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            dots: false,
+            nav: true,
+            navRewind: true,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            loop: true,
+            navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"]
+        });
+    });
+</script>
+<div class="row" style="margin:0;">
+    <div class="col-md-3 col-6" style="padding:0;">
+        <a class="image-link" href="https://www.smardonline.com/dell-alienware-25-aw2521hfl-240hz.html">
+            <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/BAN1.jpg"}}" alt="" />
+        </a>
+    </div>
+    <div class="col-md-3 col-6" style="padding:0;">
+        <a class="image-link" href="https://www.smardonline.com/dell-alienware-25-aw2521hfl-240hz.html">
+            <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/BAN2.jpg"}}" alt="" />
+        </a>
+    </div>
+    <div class="col-md-3 col-6" style="padding:0;">
+        <a class="image-link" href="https://www.smardonline.com/apacer-ssd-120-gb-sata-iii-as340-write-500mb-s.html">
+            <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/bbb1.jpg"}}" alt="" />
+        </a>
+    </div>
+    <div class="col-md-3 col-6" style="padding:0;">
+        <a class="image-link" href="https://www.smardonline.com/apacer-ssd-120-gb-sata-iii-as340-write-500mb-s.html">
+            <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/bb2.jpg"}}" alt="" />
+        </a>
+    </div>
+</div>
+<div class="container">
+    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="226" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+</div>
+<!-- <div class="our-brands" style="border-bottom: #eceae8 solid 1px;border-top: #eceae8 solid 1px;padding: 45px 0 45px;"> 
+    <div class="container">
+    <div class="owl-side-narrow">
+    <div id="brands-slider-demo-11" class="brands-slider">
+    <div class="owl-carousel">
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand1n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand2n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand3n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand4n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand5n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand6n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand2n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand3n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand4n.png"}}" alt="" /></div>
+    <div class="item" style="padding:10px 0;text-align:center;"><img style="display:inline;" src="{{media url="wysiwyg/smartwave/porto/brands/11/brand5n.png"}}" alt="" /></div>
+    </div>
+    <script type="text/javascript">
+    require([
+    'jquery',
+    'owl.carousel/owl.carousel.min'
+    ], function ($) {
+    $("#brands-slider-demo-11 .owl-carousel").owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    margin: 20,
+    nav: true,
+    navText: ["<em class='porto-icon-left-open-huge'></em>","<em class='porto-icon-right-open-huge'></em>"],
+    dots: false,
+    loop: true,
+    responsive: {
+        0: {
+        items:2
+        },
+        640: {
+        items:3
+        },
+        768: {
+        items:4
+        },
+        992: {
+        items:5
+        },
+        1200: {
+        items:5
+        }
+    }
+    });
+    });
+    </script>
+    </div>
+    </div>
+    </div>
+    </div>  -->
+<style>
+    #banner-slider-demo-11 .slide-2 .text-content em {
+        font-family: 'Oswald';
+        font-size: 40px;
+        font-style: normal;
+        display: block;
+        color: #301b24;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    #banner-slider-demo-11 .slide-2 .text-content h2 {
+        font-family: 'Oswald';
+        font-size: 79px;
+        color: #301b24;
+        line-height: 1;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.035em;
+        text-transform: uppercase;
+    }
+
+    #banner-slider-demo-11 .slide-2 .text-content p span {
+        font-size: 60px;
+        color: #39332d;
+        vertical-align: top;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    #banner-slider-demo-11 .slide-2 .text-content a {
+        background-color: #301b24;
+        font-family: 'Oswald';
+        font-size: 13px;
+        color: #fff;
+        vertical-align: top;
+        font-weight: 400;
+        letter-spacing: 0.075em;
+        padding: 13px 28px;
+        margin-top: 30px;
+    }
+
+    @media (max-width:767px) {
+        #banner-slider-demo-11 .slide-2 .text-content em {
+            font-size: 12px;
+        }
+
+        #banner-slider-demo-11 .slide-2 .text-content h2 {
+            font-size: 22px;
+        }
+
+        #banner-slider-demo-11 .slide-2 .text-content p span {
+            font-size: 14px;
+        }
+
+        #banner-slider-demo-11 .slide-2 .text-content a {
+            font-size: 9px;
+            padding: 6px 10px;
+            margin-top: 5px;
+        }
+    }
+
+</style>
+<style>
+    .page-main {
+        max-width: 100%;
+        padding: 0;
+    }
+    .columns .column.main {
+        padding-bottom: 0;
+    }
+    .bg-grey-gradient {
+        background-image: linear-gradient(to bottom,#f4f4f4,#fff);
+    }
+    #main-slider-demo-25 img {
+        width: 100%;
+    }
+    #main-slider-demo-25 .products-grid:not(.side-list):not(.small-list) .product-item .product-item-info {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+    .category-product-item {
+        position: relative;
+        cursor: pointer;
+    }
+    .category-product-item:before {
+        background-color: rgba(27, 27, 23, 0.01);
+        content: "";
+        transition: all 0.3s;
+        bottom: 0;
+        color: #FFF;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        z-index: 1;
+    }
+    .owl-item > .item:hover > .category-product-item:before {
+        background-color: rgba(27, 27, 23, 0.16);
+    }
+    .category-product-item > .cat-detail {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 12%;
+        color: #fff;
+        z-index: 2;
+    }
+    .category-product-item + .products-grid .product-item {
+        width: 100%;
+    }
+    .category-product-item + .products-grid {
+        max-width: 50%;
+        margin: -37% auto 0;
+    }
+    @media (max-width: 991px) {
+        .category-product-item + .products-grid {
+            max-width: 70%;
+        }
+    }
+    .category-product-item .cat-detail h3 {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0 0 10px;
+        line-height: 1.35;
+    }
+    .category-product-item .cat-detail h5 {
+        font-size: 14px;
+        margin: -10px 0 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.8;
+        opacity: .7;
+    }
+    .category-product-item .cat-detail > a {
+        font-size: 12px;
+        color: #fff;
+        display: inline-block;
+        text-transform: uppercase;
+        margin-top: 4%;
+        padding: 10px;
+    }
+    .category-product-item .cat-detail > a > i {
+        margin-left: 8px;
+    }
+    @media (max-width: 767px) {
+        .category-product-item .cat-detail h3 {
+            font-size: 18px;
+        }
+        .category-product-item .cat-detail h5 {
+            font-size: 12px;
+        }
+    }
+    #main-slider-demo-25 .products-grid .product-labels, #main-slider-demo-25 .products-grid .product-item .product-item-inner, #main-slider-demo-25 .products-grid .product-item .product-item-info .weltpixel-quickview.weltpixel_quickview_button_v2 {
+        display: none;
+    }
+    #main-slider-demo-25 .products-grid .product-item .product-item-info.type1 {
+        background: transparent;
+    }
+    #main-slider-demo-25 .owl-middle-narrow.owl-theme .owl-controls {
+        top: 32%;
+        opacity: 1;
+        visibility: visible;
+    }
+    #main-slider-demo-25 .owl-middle-narrow.owl-theme .owl-controls .owl-nav [class*=owl-] {
+        font-size: 18px;
+        color: #fff;
+    }
+    .products-pd-1 > .products-grid .product-item .product-item-info {
+        border: 0 !important;
+        box-shadow: none !important;
+        padding: 20px 40px 5px !important;
+    }
+    .products-pd-1 > .products-grid .product-item {
+        padding: 1px;
+    }
+    .products-pd-1 > .products-grid {
+        margin: -1px;
+    }
+    .products-pd-1 .products-grid .product-item .product-item-inner, .products-pd-1 .product-item .product-reviews-summary, .products-pd-1 .products-grid .product-item .product-item-info .weltpixel-quickview.weltpixel_quickview_button_v2, .products-pd-1 .product-labels {
+        display: none;
+    }
+    .products-pd-1 > .products-grid .product-item .price-box {
+        white-space: nowrap;
+    }
+    .cms-index-index .column.main .block.newsletter {
+        width: auto;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+    .cms-index-index .column.main .block.newsletter .field .control:before {
+        display: none;
+    }
+    .cms-index-index .column.main .block.newsletter input {
+        border-radius: 24px 0 0 24px;
+        background: #f4f4f4;
+        border: none;
+        height: 48px;
+        font-size: 12px;
+        font-style: italic;
+        color: #777;
+        outline: none;
+        box-shadow: none;
+        text-align: left;
+        line-height: 1.42857;
+        padding: 8px 12px;
+        padding-left: 25px;
+        font-family: inherit;
+    }
+    .cms-index-index .column.main .block.newsletter .action.subscribe {
+        padding-left: 25px;
+        padding-right: 30px;
+        border-radius: 0 24px 24px 0;
+        height: 48px;
+        font-size: 12px;
+        font-weight: 700;
+        background: #333;
+        box-shadow: none;
+        border: 0;
+    }
+    </style>
+    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+      <a href="https://www.smardonline.com/material-per-zyre/promo.html"><h2 class="filterproduct-title"><span class="content"><strong>PROMO</strong></span></h2></a>
+      {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="936" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+  </div>
+    <div class="bg-grey-gradient" style="padding-top: 20px;">
+        <div id="main-slider-demo-25">
+            <div class="owl-carousel owl-middle-narrow">
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/arts-photography.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Bestseller</h3>
+                            <h5>25 Tituj</h5>
+                            <a href="#"><span>Shfaq të gjithë titujt</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="339" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/business-investing.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Psikologji/Filozofi</h3>
+                            <h5>30 Tituj</h5>
+                            <a href="#"><span>Shfaq të gjithë titujt</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="336" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/literature-fiction.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Albanologji</h3>
+                            <h5>41 Tituj</h5>
+                            <a href="#"><span>Shfaq të gjithë titujt</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="337" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/mystery-suspense.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Letërsi Klasike</h3>
+                            <h5>34 Tituj</h5>
+                            <a href="#"><span>Shfaq të gjithë titujt</span><i class="fas fa-long-arrow-alt-right"></i></a>                            
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="338" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/scifi-fantasy.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Letërsi e huaj</h3>
+                            <h5>31 Tituj</h5>
+                            <a href="#"><span>Shfaq të gjithë titujt</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="341" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/arts-photography.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Letërsi shqiptare</h3>
+                            <h5>2 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="342" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/business-investing.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Nobeliste</h3>
+                            <h5>3 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="340" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/literature-fiction.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Lidership</h3>
+                            <h5>4 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="344" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/mystery-suspense.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Biografi/Bibliografi</h3>
+                            <h5>4 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="345" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/scifi-fantasy.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Libra për fëmijë</h3>
+                            <h5>3 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="125" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/arts-photography.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Literaturë shkollore</h3>
+                            <h5>2 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="346" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/business-investing.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Romancë & Aventurë</h3>
+                            <h5>3 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="347" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/literature-fiction.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Fantazi/Mister</h3>
+                            <h5>4 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="941" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/mystery-suspense.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Fjalor të ndryshëm</h3>
+                            <h5>4 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="943" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/scifi-fantasy.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Art/Fotografi</h3>
+                            <h5>3 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="944" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/arts-photography.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Akademi</h3>
+                            <h5>2 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="945" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/business-investing.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Politikë</h3>
+                            <h5>3 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="946" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/literature-fiction.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Shëndet</h3>
+                            <h5>4 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="947" product_count="1" column_count="1" aspect_ratio="0" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+                <div class="item">
+                    <div class="category-product-item">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/mystery-suspense.jpg"}}" alt="" />
+                        <span class="cat-detail">
+                            <h3>Teologji</h3>
+                            <h5>4 Products</h5>
+                            <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                        </span>
+                    </div>
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="950" product_count="1" column_count="1" aspect_ratio="0" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                </div>
+            </div>
+            <script type="text/javascript">
+            require([
+                'jquery',
+                'owl.carousel/owl.carousel.min'
+            ], function ($) {
+                $("#main-slider-demo-25 .owl-carousel").owlCarousel({
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    stagePadding: 70,
+                    margin: 20,
+                    nav: true,
+                    navText: ["<em class='porto-icon-left-open-big'></em>","<em class='porto-icon-right-open-big'></em>"],
+                    dots: false,
+                    loop: true,
+                    responsive: {
+                        0: {
+                            items:1
+                        },
+                        560: {
+                            items:2
+                        },
+                        768: {
+                            items:3
+                        }
+                    }
+                });
+            });
+            </script>
+        </div>
+    </div>
+<div class="banner-container">
+    <div id="banner-slider-demo-22" class="owl-carousel owl-banner-carousel" data-slider-id="1">
+        <!-- <div class="item" style="background:url({{media url="smartwave/porto/homepage/22/BANNERI_SHKOLLOR_2.jpg"}})  center center no-repeat;background-size:100% 100%;">
+        <div class="container" style="position:relative;height:532px;">
+            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
+                <h5>Start the Revolution</h5>
+                <h2>drone pro 4</h2>
+                <h5>From <strong>$499</strong></h5>
+                <p><a class="btn" href="#">Buy Now</a></p>
+            </div>
+        </div>
+    </div>  -->
+        <!-- <div class="item" style="background:url({{media url="wysiwyg/smartwave/porto/homepage/22/BANNERI_SHKOLLOR_3.jpg"}})  center center no-repeat;background-size:auto auto;">
+        <div class="container" style="position:relative;height:532px;">
+            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
+                <h5>Start the Revolution</h5>
+                <h2>drone pro 4</h2>
+                <h5>From <strong>$499</strong></h5>
+                <p><a class="btn" href="#">Buy Now</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="item" style="background:url({{media url="wysiwyg/smartwave/porto/homepage/22/home_slide3.jpg"}})  center center no-repeat;background-size:100% 100%;">
+        <div class="container" style="position:relative;height:532px;">
+            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
+                <h5>Start the Revolution</h5>
+                <h2>drone pro 4</h2>
+                <h5>From <strong>$499</strong></h5>
+                <p><a class="btn" href="#">Buy Now</a></p>
+            </div>
+        </div>
+    </div>
+    </div> -->
+        <div class="banner-thumbs-container">
+            <div class="container">
+                <!-- <div class="owl-thumbs" data-slider-id="1">
+            <button class="owl-thumb-item active">Drones</button>
+            <button class="owl-thumb-item">Phones</button>
+            <button class="owl-thumb-item">Accessories</button>
+        </div> -->
+            </div>
+        </div>
+        <script type="text/javascript">
+            require([
+                'jquery',
+                'owl.carousel/owl.carousel.min'
+            ], function ($) {
+                var banner_owl = $("#banner-slider-demo-22");
+                banner_owl.owlCarousel({
+                    items: 1,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    dots: false,
+                    nav: false,
+                    navRewind: true,
+                    animateIn: 'fadeIn',
+                    animateOut: 'fadeOut',
+                    loop: true,
+                    lazyLoad: true,
+                    navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"],
+                    thumbs: true,
+                    thumbImage: false,
+                    thumbsPrerendered: true,
+                    thumbContainerClass: 'owl-thumbs',
+                    thumbItemClass: 'owl-thumb-item'
+                });
+            });
+        </script>
+    </div>
+    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+        <a href="https://www.smardonline.com/material-per-zyre/promo.html"><h2 class="filterproduct-title"><span class="content"><strong>VULA</strong></span></h2></a>
+        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="241" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+    </div>  
+    <div id="home-content-slider-demo-20" class="owl-carousel owl-bottom-narrow owl-banner-carousel">
+        <div class="item" style="position:relative;">
+            <a href="https://www.smardonline.com/material-per-zyre/pjisje-organizimi-dhe-arkivimi/dosje.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/blackfriday2.png"}}" alt="" />
+            </a>
+            <!-- <div class="content" style="position:absolute;right:15%;top:20%">
+    <h3>Adidas Ultra Boost</h3>
+    <p><img src="{{media url="wysiwyg/smartwave/porto/homepage/20/content/shoes.png"}}" alt="" /></p>
+    <a href="#">Shop Now</a>
+    </div> -->
+        </div>
+        <div class="item" style="position:relative;">
+            <a href="">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/regjistrator1.jpg"}}" alt="" />
+            </a>
+            <!-- <div class="content" style="position:absolute;right:15%;top:20%">
+    <h3>Adidas Ultra Boost</h3>
+    <p><img src="{{media url="wysiwyg/smartwave/porto/homepage/20/content/shoes.png"}}" alt="" /></p>
+    <a href="#">Shop Now</a>
+    </div> -->
+        </div>
+        <div class="item" style="position:relative;">
+            <a href="">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/a4.jpg"}}" alt="" />
+            </a>
+            <!-- <div class="content" style="position:absolute;right:15%;top:20%">
+    <h3>Adidas Ultra Boost</h3>
+    <p><img src="{{media url="wysiwyg/smartwave/porto/homepage/20/content/shoes.png"}}" alt="" /></p>
+    <a href="#">Shop Now</a>
+    </div> -->
+        </div>
+    </div>
+    <script type="text/javascript">
+        require([
+            'jquery',
+            'owl.carousel/owl.carousel.min'
+        ], function ($) {
+            var owl_20 = $("#home-content-slider-demo-20").owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: true,
+                navRewind: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                loop: true,
+                nav: false,
+                navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"]
+            });
+        });
+    </script>
+    <div style="padding: 0 15px;margin-bottom: 50px;">
+        <script type="text/javascript">
+            require([
+                'jquery',
+                'owl.carousel/owl.carousel.min'
+            ], function ($) {
+                $("#featured_product .owl-carousel").owlCarousel({
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    navRewind: true,
+                    margin: 0,
+                    nav: false,
+                    navText: ["<em class='porto-icon-left-open-huge'></em>", "<em class='porto-icon-right-open-huge'></em>"],
+                    dots: true,
+                    responsive: {
+                        0: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        992: {
+                            items: 4
+                        },
+                        1200: {
+                            items: 6
+                        }
+                    }
+                });
+            });
+        </script>
+    </div>
+    <!-- <div style="background-color: #f4f4f4;">
+    <div class="container" style="padding-top: 3.5vw;padding-bottom: 2.5vw;">
+    <div id="category-slider-demo-22" style="margin-left: -10px;margin-right: -10px;">
+        <div class="owl-carousel">
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-fashion"></i>
+                        <h3>Modë</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-electronics"></i>
+                        <h3>Elektronikë</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-gifts"></i>
+                        <h3>Dhurata</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-garden"></i>
+                        <h3>Kopësht</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-music"></i>
+                        <h3>Muzikë</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-motors"></i>
+                        <h3>Vetura</h3>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+        require([
+            'jquery',
+            'owl.carousel/owl.carousel.min'
+        ], function ($) {
+            $("#category-slider-demo-22 .owl-carousel").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                margin: 0,
+                nav: false,
+                navText: ["<em class='porto-icon-left-open-big'></em>","<em class='porto-icon-right-open-big'></em>"],
+                dots: false,
+                loop: false,
+                responsive: {
+                    0: {
+                        items:2
+                    },
+                    640: {
+                        items:3
+                    },
+                    768: {
+                        items:4
+                    },
+                    992: {
+                        items:5
+                    },
+                    1200: {
+                        items:6
+                    }
+                }
+            });
+        });
+        </script>
+    </div>
+    </div>
+    </div> -->
+    <div class="special-offers-section" style="background-color: #f4f4f4;">
+        <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="filterproduct-title" style="padding-bottom: 10px;margin-bottom: 30px;"><span
+                            class="content"><strong>Oferta Speciale</strong></span></h2>
+                    <a href="#"><img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/monitor.jpg"}}"
+                            alt="" /></a>
+                </div>
+                <div class="col-lg-8">
+                    <div class="filterproducts-tab" style="padding-top: 10px;">
+                        <div class="data items" data-mage-init='{"tabs":{"openedState":"active"}}'>
+                            <div class="data item title" aria-labeledby="tab-label-featured-title"
+                                data-role="collapsible" id="tab-label-featured">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#featured"
+                                    id="tab-label-featured-title">Produkte letre</a>
+                            </div>
+                            <div class="data item content" id="featured" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured_product" product_count="4" column_count="4" category_id="53" aspect_ratio="0" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Kompjuter</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="86" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Dëgjuese</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" category_id="363" column_count="4" aspect_ratio="0" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Libra</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="62" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Gaming</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="189" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Smartphone</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="109" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+        <h2 class="filterproduct-title"><span class="content"><strong>MATERIAL SHKOLLOR</strong></span></h2>
+        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="197" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+    </div>
+    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+        <h2 class="filterproduct-title"><span class="content"><strong>SMARTPHONE & TABLET</strong></span></h2>
+        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="109" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+    </div>
+    <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
+        <div class="row home-ads" style="margin-bottom: 16px;">
+            <div class="col-lg-6">
+                <div class="porto-ibanner">
+                    <a href="https://www.smardonline.com/ram-memorie-kingston-hyperx-fury-rgb-8gb-3200mhz.html">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/b1.jpg"}}" alt="" /></a>
+                    <!-- <div class="porto-ibanner-desc">
+                <h2 class="porto-ibanner-title" style="color: #222529;">ACTION CAMERAS</h2>
+                <div class="porto-ibanner-content">
+                    <h4>Starting From <b>$399</b></h4>
+                    <p><a class="btn btn-primary">Shop Now</a></p>
+                </div>
+            </div> -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="porto-ibanner">
+                    <a href="https://www.smardonline.com/pllake-ame-msi-b450m-a-pro-max-micro-atx.html">
+                        <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/b2.jpg"}}" alt="" />
+                    </a>
+                    <!-- <div class="porto-ibanner-desc">
+                <h2 class="porto-ibanner-title" style="color: #222529;">FOR ALL STYLES</h2>
+                <div class="porto-ibanner-content" style="padding-left: 0;padding-right: 40px;order: 1;text-align: right;">
+                    <h4>Starting From <b>$199</b></h4>
+                    <p><a class="btn btn-primary">Shop Now</a></p>
+                </div>
+            </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+            <h2 class="filterproduct-title"><span class="content"><strong> Kompjuterë & Elektronikë </strong></span>
+            </h2>
+            {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="86" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+        </div>
+
+        <h2 class="filterproduct-title"><span class="content"><strong>PRODUKTE TË REJA</strong></span></h2>
+        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest" aspect_ratio="0" column_count="6" product_count="6" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+    </div>
+    
+    <div class="container home-subcats" style="padding-top: 0;padding-bottom: 2.5vw;">
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="porto-sicon-wrapper style_1">
+                    <div class="porto-sicon-box left-icon">
+                        <div class="porto-sicon-left">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/rsz_laptop.png"}}" alt="" />
+                        </div>
+                        <div class="porto-sicon-body">
+                            <div class="porto-sicon-header">
+                                <h3 class="porto-sicon-title"
+                                    style="font-weight:700;font-size:17px;line-height:20px;color:#222529;">Laptop</h3>
+                            </div>
+                            <div class="porto-sicon-description" style="">
+                                <a class="btn btn-dark"
+                                    href="https://www.smardonline.com/kompjuter-dhe-elektronike.html">Blej tani</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="porto-sicon-wrapper style_1">
+                    <div class="porto-sicon-box left-icon">
+                        <div class="porto-sicon-left">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/rsz_iphone.png"}}" alt="" />
+                        </div>
+                        <div class="porto-sicon-body">
+                            <div class="porto-sicon-header">
+                                <h3 class="porto-sicon-title"
+                                    style="font-weight:700;font-size:17px;line-height:20px;color:#222529;">Smartphone
+                                </h3>
+                            </div>
+                            <div class="porto-sicon-description" style="">
+                                <a class="btn btn-dark"
+                                    href="https://www.smardonline.com/telefona-dhe-aksesore.html">Blej tani</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="porto-sicon-wrapper style_1">
+                    <div class="porto-sicon-box left-icon">
+                        <div class="porto-sicon-left">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/rsz_material.png"}}" alt="" />
+                        </div>
+                        <div class="porto-sicon-body">
+                            <div class="porto-sicon-header">
+                                <h3 class="porto-sicon-title"
+                                    style="font-weight:700;font-size:17px;line-height:20px;color:#222529;">Paisje
+                                    per<br>zyre</h3>
+                            </div>
+                            <div class="porto-sicon-description" style="">
+                                <a class="btn btn-dark" href="https://www.smardonline.com/material-per-zyre.html">Blej
+                                    tani</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="porto-sicon-wrapper style_1">
+                    <div class="porto-sicon-box left-icon">
+                        <div class="porto-sicon-left">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/rsz_ssd.png"}}" alt="" />
+                        </div>
+                        <div class="porto-sicon-body">
+                            <div class="porto-sicon-header">
+                                <h3 class="porto-sicon-title"
+                                    style="font-weight:700;font-size:17px;line-height:20px;color:#222529;">
+                                    Memory<br>Drive</h3>
+                            </div>
+                            <div class="porto-sicon-description" style="">
+                                <a class="btn btn-dark"
+                                    href="https://www.smardonline.com/kompjuter-dhe-elektronike/memory-storage.html">Blej
+                                    tani</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+        <h2 class="filterproduct-title"><span class="content"><strong>Aksesorë</strong></span></h2>
+        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="821" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+    </div>
+
+    <div style="padding-top: 50px; padding-bottom: 50px; background-color:#f4f4f4;" class="custom-support">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="margin: 25px 0;">
+                    <i class="porto-icon-shipping" style="line-height:58px;font-size:50px;"></i>
+                    <div class="content">
+                        <h2 style="font-weight:700;font-size:18px;line-height:27px;">TRANSPORTI GRATIS</h2>
+                        <em style="font-weight:600;font-size:17px;color:#21293c;">Për produkte me vlerë mbi 30€</em>
+                        <!--                      <p style="font-size:16px;line-height:26px;color:#7b858a;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapibus.</p> -->
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin: 25px 0;">
+                    <i class="porto-icon-money" style="line-height:58px;font-size:50px;"></i>
+                    <div class="content">
+                        <h2 style="font-weight:700;font-size:18px;line-height:27px;">RIKTHIM I TË HOLLAVE</h2>
+                        <em style="font-weight:600;font-size:17px;color:#21293c;">Shpejtë & Sigurtë</em>
+                        <!--                      <p style="font-size:16px;line-height:26px;color:#7b858a;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapibus.</p> -->
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin: 25px 0;">
+                    <i class="porto-icon-support" style="line-height:58px;font-size:50px;"></i>
+                    <div class="content">
+                        <h2 style="font-weight:700;font-size:18px;line-height:27px;">MBËSHTETJE ONLINE </h2>
+                        <em style="font-weight:600;font-size:17px;color:#21293c;">Ju duhet ndihmë?</em>
+                        <!--                      <p style="font-size:16px;line-height:26px;color:#7b858a;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapibus.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <h2 class="filterproduct-title" style="background-image:none;margin-top:20px;margin-bottom:20px;"><span
+                        class="content"><strong>Çanta</strong></span></h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_small_list" product_count="3" category_id="226" aspect_ratio="0" image_width="212" image_height="212"  template="small_list.phtml"}}
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h2 class="filterproduct-title" style="background-image:none;margin-top:20px;margin-bottom:20px;"><span
+                        class="content"><strong>Aksesorë</strong></span></h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_small_list" product_count="3" category_id="277" aspect_ratio="0" image_width="212" image_height="212" template="small_list.phtml"}}
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h2 class="filterproduct-title" style="background-image:none;margin-top:20px;margin-bottom:20px;"><span
+                        class="content"><strong>Tonerë</strong></span></h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_small_list" product_count="3" category_id="61" aspect_ratio="0" image_width="212" image_height="212" template="small_list.phtml"}}
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h2 class="filterproduct-title" style="background-image:none;margin-top:20px;margin-bottom:20px;"><span
+                        class="content"><strong>Të fundit</strong></span></h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_small_list" product_count="3" aspect_ratio="0" image_width="212" image_height="212" template="small_list.phtml"}}
+            </div>
+        </div>
+        <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+            <h2 class="filterproduct-title"><span class="content"><strong>MË SHUMË PRODUKTE</strong></span></h2>
+            {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+        </div> 
+        <div class="our-brands" style="margin-top:15px;">
+            <h2 class="filterproduct-title" style="background-image:none;margin-top:40px;margin-bottom:30px;"><span
+                    class="content"><strong>PARTNERËT TANË</strong></span></h2>
+            <div id="brands-slider-demo-22" class="brands-slider">
+                <div class="owl-carousel">
+                    <a href="https://acer.com">
+                        <div class="item" style="padding:10px 0;"><img
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_acer-01.png"}}" alt="" /></div>
+                    </a>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_acme-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_anp-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_apple-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_benq-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_brother-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_canon-01.png"}}" alt="" /></div>
+                                        <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_centropen-01.png"}}" alt="" /></div>
+                    <a href="https://www.colop.com/">
+                        <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_colop-01.png"}}" alt="" /></div>
+                    </a>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_dell-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_disney-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_dlink-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_epson-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_eshark2-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_genius-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_1hama-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_havit-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_hp-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_imac-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_interpano-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_kyocera-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_lexmark-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_manhatan-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_maxell-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_mediarangee-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_philips-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_printking-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_radece-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_1razer-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_samsung-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_2sandisk-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_sbox-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_spirit-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_statovac-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_tiptop-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_toshiba-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_wsh-01.png"}}" alt="" /></div>
+                    <div class="item" style="padding:10px 0;"><img
+                            src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_xerox-01.png"}}" alt="" /></div>
+                </div>
+                <script type="text/javascript">
+                    require([
+                        'jquery',
+                        'owl.carousel/owl.carousel.min'
+                    ], function ($) {
+                        $("#brands-slider-demo-22 .owl-carousel").owlCarousel({
+                            autoplay: true,
+                            autoplayTimeout: 5000,
+                            autoplayHoverPause: true,
+                            margin: 30,
+                            nav: false,
+                            navText: ["<em class='porto-icon-left-open-big'></em>", "<em class='porto-icon-right-open-big'></em>"],
+                            dots: false,
+                            loop: true,
+                            responsive: {
+                                0: {
+                                    items: 2
+                                },
+                                640: {
+                                    items: 3
+                                },
+                                768: {
+                                    items: 4
+                                },
+                                992: {
+                                    items: 5
+                                },
+                                1200: {
+                                    items: 5
+                                }
+                            }
+                        });
+                    });
+                </script>
+            </div>
