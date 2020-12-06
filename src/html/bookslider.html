@@ -403,3 +403,498 @@
             </script>
         </div>
     </div>
+    <style>
+        .page-main {
+            max-width: 100%;
+            padding: 0;
+        }
+        .columns .column.main {
+            padding-bottom: 0;
+        }
+        .bg-grey-gradient {
+            background-image: linear-gradient(to bottom,#f4f4f4,#fff);
+        }
+        #main-slider-demo-25 img {
+            width: 100%;
+        }
+        #main-slider-demo-25 .products-grid:not(.side-list):not(.small-list) .product-item .product-item-info {
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+        }
+        .category-product-item {
+            position: relative;
+            cursor: pointer;
+        }
+        .category-product-item:before {
+            background-color: rgba(27, 27, 23, 0.01);
+            content: "";
+            transition: all 0.3s;
+            bottom: 0;
+            color: #FFF;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+            z-index: 1;
+        }
+        .owl-item > .item:hover > .category-product-item:before {
+            background-color: rgba(27, 27, 23, 0.16);
+        }
+        .category-product-item > .cat-detail {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 12%;
+            color: #fff;
+            z-index: 2;
+        }
+        .category-product-item + .products-grid .product-item {
+            width: 100%;
+        }
+        .category-product-item + .products-grid {
+            max-width: 50%;
+            margin: -37% auto 0;
+        }
+        @media (max-width: 991px) {
+            .category-product-item + .products-grid {
+                max-width: 70%;
+            }
+        }
+        .category-product-item .cat-detail h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 10px;
+            line-height: 1.35;
+        }
+        .category-product-item .cat-detail h5 {
+            font-size: 14px;
+            margin: -10px 0 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 1.8;
+            opacity: .7;
+        }
+        .category-product-item .cat-detail > a {
+            font-size: 12px;
+            color: #fff;
+            display: inline-block;
+            text-transform: uppercase;
+            margin-top: 4%;
+            padding: 10px;
+        }
+        .category-product-item .cat-detail > a > i {
+            margin-left: 8px;
+        }
+        @media (max-width: 767px) {
+            .category-product-item .cat-detail h3 {
+                font-size: 18px;
+            }
+            .category-product-item .cat-detail h5 {
+                font-size: 12px;
+            }
+        }
+        #main-slider-demo-25 .products-grid .product-labels, #main-slider-demo-25 .products-grid .product-item .product-item-inner, #main-slider-demo-25 .products-grid .product-item .product-item-info .weltpixel-quickview.weltpixel_quickview_button_v2 {
+            display: none;
+        }
+        #main-slider-demo-25 .products-grid .product-item .product-item-info.type1 {
+            background: transparent;
+        }
+        #main-slider-demo-25 .owl-middle-narrow.owl-theme .owl-controls {
+            top: 32%;
+            opacity: 1;
+            visibility: visible;
+        }
+        #main-slider-demo-25 .owl-middle-narrow.owl-theme .owl-controls .owl-nav [class*=owl-] {
+            font-size: 18px;
+            color: #fff;
+        }
+        .products-pd-1 > .products-grid .product-item .product-item-info {
+            border: 0 !important;
+            box-shadow: none !important;
+            padding: 20px 40px 5px !important;
+        }
+        .products-pd-1 > .products-grid .product-item {
+            padding: 1px;
+        }
+        .products-pd-1 > .products-grid {
+            margin: -1px;
+        }
+        .products-pd-1 .products-grid .product-item .product-item-inner, .products-pd-1 .product-item .product-reviews-summary, .products-pd-1 .products-grid .product-item .product-item-info .weltpixel-quickview.weltpixel_quickview_button_v2, .products-pd-1 .product-labels {
+            display: none;
+        }
+        .products-pd-1 > .products-grid .product-item .price-box {
+            white-space: nowrap;
+        }
+        .cms-index-index .column.main .block.newsletter {
+            width: auto;
+            max-width: 570px;
+            margin: 0 auto;
+        }
+        .cms-index-index .column.main .block.newsletter .field .control:before {
+            display: none;
+        }
+        .cms-index-index .column.main .block.newsletter input {
+            border-radius: 24px 0 0 24px;
+            background: #f4f4f4;
+            border: none;
+            height: 48px;
+            font-size: 12px;
+            font-style: italic;
+            color: #777;
+            outline: none;
+            box-shadow: none;
+            text-align: left;
+            line-height: 1.42857;
+            padding: 8px 12px;
+            padding-left: 25px;
+            font-family: inherit;
+        }
+        .cms-index-index .column.main .block.newsletter .action.subscribe {
+            padding-left: 25px;
+            padding-right: 30px;
+            border-radius: 0 24px 24px 0;
+            height: 48px;
+            font-size: 12px;
+            font-weight: 700;
+            background: #333;
+            box-shadow: none;
+            border: 0;
+        }
+        </style>
+        <div class="bg-grey-gradient" style="padding-top: 20px;">
+            <div id="main-slider-demo-25">
+                <div class="owl-carousel owl-middle-narrow">
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/arts-photography.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Bestseller</h3>
+                                <h5>2 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="339" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/business-investing.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Psikologji/Filozofi/Sociologji</h3>
+                                <h5>3 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="336" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/literature-fiction.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Albanologji</h3>
+                                <h5>4 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="337" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/mystery-suspense.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Letërsi Klasike</h3>
+                                <h5>4 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="338" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/scifi-fantasy.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Letërsi e huaj</h3>
+                                <h5>3 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="341" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/arts-photography.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Letërsi shqiptare</h3>
+                                <h5>2 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="342" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/business-investing.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Nobeliste</h3>
+                                <h5>3 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="340" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/literature-fiction.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Lidership</h3>
+                                <h5>4 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="344" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/mystery-suspense.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Biografi/Bibliografi</h3>
+                                <h5>4 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="345" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/scifi-fantasy.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Libra për fëmijë</h3>
+                                <h5>3 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="125" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/arts-photography.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Literaturë shkollore</h3>
+                                <h5>2 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="346" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/business-investing.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Romancë & Aventurë</h3>
+                                <h5>3 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="347" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/literature-fiction.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Fantazi/Mister</h3>
+                                <h5>4 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="941" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/mystery-suspense.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Fjalor të ndryshëm</h3>
+                                <h5>4 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="943" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/scifi-fantasy.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Art/Fotografi</h3>
+                                <h5>3 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="944" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/arts-photography.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Akademi</h3>
+                                <h5>2 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="945" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/business-investing.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Politikë</h3>
+                                <h5>3 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="946" product_count="1" column_count="1" aspect_ratio="1" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/literature-fiction.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Shëndet</h3>
+                                <h5>4 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="947" product_count="1" column_count="1" aspect_ratio="0" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                    <div class="item">
+                        <div class="category-product-item">
+                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/25/mystery-suspense.jpg"}}" alt="" />
+                            <span class="cat-detail">
+                                <h3>Teologji</h3>
+                                <h5>4 Products</h5>
+                                <a href="#"><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </span>
+                        </div>
+                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="950" product_count="1" column_count="1" aspect_ratio="0" image_width="250" product_type="1" lazyload="none" template="grid.phtml"}}
+                    </div>
+                </div>
+                <script type="text/javascript">
+                require([
+                    'jquery',
+                    'owl.carousel/owl.carousel.min'
+                ], function ($) {
+                    $("#main-slider-demo-25 .owl-carousel").owlCarousel({
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true,
+                        stagePadding: 70,
+                        margin: 20,
+                        nav: true,
+                        navText: ["<em class='porto-icon-left-open-big'></em>","<em class='porto-icon-right-open-big'></em>"],
+                        dots: false,
+                        loop: true,
+                        responsive: {
+                            0: {
+                                items:1
+                            },
+                            560: {
+                                items:2
+                            },
+                            768: {
+                                items:3
+                            }
+                        }
+                    });
+                });
+                </script>
+            </div>
+        </div>
+    
+    <div style="background-color: #f4f4f4;padding: 50px 0;">
+        <div class="container">
+            <h2 class="filterproduct-title"><span class="content"><strong>Best Sellers Books</strong></span><a href="#" class=""><span>View All Products</span><i class="fas fa-long-arrow-alt-right"></i></a></h2>
+            <div class="row no-padding" style="margin: -1px;">
+                <div class="col-md-4" style="padding: 1px !important;">
+                    <div style="padding: 50px 0;background-color: #fff;height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;">
+                        <h5 style="font-size: 18px;color: rgba(34,37,41,0.6);line-height: 1;text-align: center;font-weight:200;margin: 0;margin-bottom: 4px;"><i>BOOK CLUB</i></h5>
+                        <h2 style="font-size: 28px;line-height: 32px;text-align: center;font-weight:600;color: #222529;letter-spacing: -0.24px;margin: 0;margin-bottom: 32px;padding: 0 15%;">A selection with only the best books</h2>
+                        <p style="margin-bottom: 43px;"><img src="{{media url="wysiwyg/smartwave/porto/homepage/25/shop25_book_img.png"}}" alt="" /></p>
+                        <p style="margin: 0;"><a href="#" class="btn" style="background-color: #3256f4;color: #fff;font-size: 16px;font-weight: 500;line-height: 1.4;padding: 13px 32px;"><span>EXPLORE BOOKS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-md-8 products-pd-1" style="padding: 1px !important;">
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="8" column_count="4" aspect_ratio="1" image_width="250" product_type="1" template="grid.phtml"}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #fff;padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="margin-bottom: 48px;">
+                    <div class="column-inner">
+                        <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner1.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                            <div class="col-auto" style="padding-right: 24px !important;">
+                                <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Award Winners</h2>
+                                <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">12 Books</p>
+                                <p style="margin: 0;"><a href="#" class="btn" style="background-color: #3256f4;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 48px;">
+                    <div class="column-inner">
+                        <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner2.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                            <div class="col-auto" style="padding-right: 24px !important;">
+                                <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Deals In Books</h2>
+                                <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">21 Books</p>
+                                <p style="margin: 0;"><a href="#" class="btn" style="background-color: #fe1656;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 48px;">
+                    <div class="column-inner">
+                        <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner3.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                            <div class="col-auto" style="padding-right: 24px !important;">
+                                <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Most Gifted</h2>
+                                <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">38 Books</p>
+                                <p style="margin: 0;"><a href="#" class="btn" style="background-color: #0590b3;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>Featured Books</strong></span></h2>
+            {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="1" image_width="250" product_type="3" template="grid.phtml"}}
+        </div>
+    </div>
+    <div style="padding: 60px 0;background: #3256f4 url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_book.png"}}) center right no-repeat;background-size: 41% auto;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-5 col-7">
+                    <div style="display: inline-block;">
+                        <h5 style="font-size: 18px;color: rgba(255,255,255,0.6);line-height: 1.5;font-weight:200;margin: 0;"><i>AVAILABLE ONCE A YEAR</i></h5>
+                        <h2 style="font-weight:600;color:#ffffff;font-size:29px;line-height:40px;margin: 0;">Get 30% off on orders over $299</h2>
+                        <p style="font-weight:500;color: #ffffff;font-size:12px;line-height:16px;text-align:right;margin: 0;">* SELECTED BOOKS</p>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-3 col-7">
+                    <a href="#" class="btn" style="background-color: #383f48;color: #fff;font-size: 16px;font-weight: 500;line-height: 1.4;padding: 13px 32px;"><span>EXPLORE BOOKS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #f4f4f4;padding: 50px 0;">
+        <div class="container">
+            <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>Recent Books</strong></span></h2>
+            {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="1" image_width="250" product_type="3" template="grid.phtml"}}
+        </div>
+    </div>
+    <div style="background-color: #fff;padding: 50px 0 55px;text-align: center;">
+        <div class="container">
+            <p style="margin-bottom: 8px;"><i class="far fa-envelope" style="font-size: 30px; line-height: 1; color: #333;"></i></p>
+            <h2 style="color: #222529;font-size: 24px;line-height: 30px;letter-spacing: -0.24px;margin: 0;font-weight: 600;">Subscribe to Our Newsletter</h2>
+            <p style="color: #777;font-size: 14px;line-height: 25px;margin-bottom: 24px;">Get all the latest information on Events, Sales and Offers.</p>
+            {{block class="Magento\Newsletter\Block\Subscribe" name="home.newsletter" template="subscribe_form_footer.phtml"}}
+        </div>
+    </div>

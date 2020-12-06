@@ -723,11 +723,334 @@
         box-shadow: none;
         border: 0;
     }
+    .filterproduct-title{
+        display: flex !important;
+        justify-content: space-between !important;
+    }
     </style>
     <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
       <a href="https://www.smardonline.com/material-per-zyre/promo.html"><h2 class="filterproduct-title"><span class="content"><strong>PROMO</strong></span></h2></a>
       {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="936" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
   </div>
+  <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+    <a href="https://www.smardonline.com/material-per-zyre/promo.html"><h2 class="filterproduct-title"><span class="content"><strong>VULA</strong></span></h2></a>
+    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="241" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+</div>  
+  
+<div class="banner-container">
+    <div id="banner-slider-demo-22" class="owl-carousel owl-banner-carousel" data-slider-id="1">
+        <!-- <div class="item" style="background:url({{media url="smartwave/porto/homepage/22/BANNERI_SHKOLLOR_2.jpg"}})  center center no-repeat;background-size:100% 100%;">
+        <div class="container" style="position:relative;height:532px;">
+            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
+                <h5>Start the Revolution</h5>
+                <h2>drone pro 4</h2>
+                <h5>From <strong>$499</strong></h5>
+                <p><a class="btn" href="#">Buy Now</a></p>
+            </div>
+        </div>
+    </div>  -->
+        <!-- <div class="item" style="background:url({{media url="wysiwyg/smartwave/porto/homepage/22/BANNERI_SHKOLLOR_3.jpg"}})  center center no-repeat;background-size:auto auto;">
+        <div class="container" style="position:relative;height:532px;">
+            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
+                <h5>Start the Revolution</h5>
+                <h2>drone pro 4</h2>
+                <h5>From <strong>$499</strong></h5>
+                <p><a class="btn" href="#">Buy Now</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="item" style="background:url({{media url="wysiwyg/smartwave/porto/homepage/22/home_slide3.jpg"}})  center center no-repeat;background-size:100% 100%;">
+        <div class="container" style="position:relative;height:532px;">
+            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
+                <h5>Start the Revolution</h5>
+                <h2>drone pro 4</h2>
+                <h5>From <strong>$499</strong></h5>
+                <p><a class="btn" href="#">Buy Now</a></p>
+            </div>
+        </div>
+    </div>
+    </div> -->
+        <div class="banner-thumbs-container">
+            <div class="container">
+                <!-- <div class="owl-thumbs" data-slider-id="1">
+            <button class="owl-thumb-item active">Drones</button>
+            <button class="owl-thumb-item">Phones</button>
+            <button class="owl-thumb-item">Accessories</button>
+        </div> -->
+            </div>
+        </div>
+        <script type="text/javascript">
+            require([
+                'jquery',
+                'owl.carousel/owl.carousel.min'
+            ], function ($) {
+                var banner_owl = $("#banner-slider-demo-22");
+                banner_owl.owlCarousel({
+                    items: 1,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    dots: false,
+                    nav: false,
+                    navRewind: true,
+                    animateIn: 'fadeIn',
+                    animateOut: 'fadeOut',
+                    loop: true,
+                    lazyLoad: true,
+                    navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"],
+                    thumbs: true,
+                    thumbImage: false,
+                    thumbsPrerendered: true,
+                    thumbContainerClass: 'owl-thumbs',
+                    thumbItemClass: 'owl-thumb-item'
+                });
+            });
+        </script>
+    </div>
+    
+    <div id="home-content-slider-demo-20" class="owl-carousel owl-bottom-narrow owl-banner-carousel">
+        <div class="item" style="position:relative;">
+            <!-- Here goes another banner-->
+            
+        </div>
+        <div class="item" style="position:relative;">
+            <a href="">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/regjistrator1.jpg"}}" alt="" />
+            </a>
+            <!-- <div class="content" style="position:absolute;right:15%;top:20%">
+    <h3>Adidas Ultra Boost</h3>
+    <p><img src="{{media url="wysiwyg/smartwave/porto/homepage/20/content/shoes.png"}}" alt="" /></p>
+    <a href="#">Shop Now</a>
+    </div> -->
+        </div>
+        <div class="item" style="position:relative;">
+            <a href="">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/a4.jpg"}}" alt="" />
+            </a>
+            <!-- <div class="content" style="position:absolute;right:15%;top:20%">
+    <h3>Adidas Ultra Boost</h3>
+    <p><img src="{{media url="wysiwyg/smartwave/porto/homepage/20/content/shoes.png"}}" alt="" /></p>
+    <a href="#">Shop Now</a>
+    </div> -->
+        </div>
+    </div>
+    <script type="text/javascript">
+        require([
+            'jquery',
+            'owl.carousel/owl.carousel.min'
+        ], function ($) {
+            var owl_20 = $("#home-content-slider-demo-20").owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: true,
+                navRewind: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                loop: true,
+                nav: false,
+                navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"]
+            });
+        });
+    </script>
+    <div style="padding: 0 15px;margin-bottom: 50px;">
+        <script type="text/javascript">
+            require([
+                'jquery',
+                'owl.carousel/owl.carousel.min'
+            ], function ($) {
+                $("#featured_product .owl-carousel").owlCarousel({
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    navRewind: true,
+                    margin: 0,
+                    nav: false,
+                    navText: ["<em class='porto-icon-left-open-huge'></em>", "<em class='porto-icon-right-open-huge'></em>"],
+                    dots: true,
+                    responsive: {
+                        0: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        992: {
+                            items: 4
+                        },
+                        1200: {
+                            items: 6
+                        }
+                    }
+                });
+            });
+        </script>
+    </div>
+    <!-- <div style="background-color: #f4f4f4;">
+    <div class="container" style="padding-top: 3.5vw;padding-bottom: 2.5vw;">
+    <div id="category-slider-demo-22" style="margin-left: -10px;margin-right: -10px;">
+        <div class="owl-carousel">
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-fashion"></i>
+                        <h3>Modë</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-electronics"></i>
+                        <h3>Elektronikë</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-gifts"></i>
+                        <h3>Dhurata</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-garden"></i>
+                        <h3>Kopësht</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-music"></i>
+                        <h3>Muzikë</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="shop-by-cat-item cat-has-icon">
+                    <span class="cat-detail">
+                        <i class="porto-new-icon-category-motors"></i>
+                        <h3>Vetura</h3>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+        require([
+            'jquery',
+            'owl.carousel/owl.carousel.min'
+        ], function ($) {
+            $("#category-slider-demo-22 .owl-carousel").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                margin: 0,
+                nav: false,
+                navText: ["<em class='porto-icon-left-open-big'></em>","<em class='porto-icon-right-open-big'></em>"],
+                dots: false,
+                loop: false,
+                responsive: {
+                    0: {
+                        items:2
+                    },
+                    640: {
+                        items:3
+                    },
+                    768: {
+                        items:4
+                    },
+                    992: {
+                        items:5
+                    },
+                    1200: {
+                        items:6
+                    }
+                }
+            });
+        });
+        </script>
+    </div>
+    </div>
+    </div> -->
+    <div class="special-offers-section" style="background-color: #f4f4f4;">
+        <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="filterproduct-title" style="padding-bottom: 10px;margin-bottom: 30px;"><span
+                            class="content"><strong>Oferta Speciale</strong></span></h2>
+                    <a href="#"><img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/monitor.jpg"}}"
+                            alt="" /></a>
+                </div>
+                <div class="col-lg-8">
+                    <div class="filterproducts-tab" style="padding-top: 10px;">
+                        <div class="data items" data-mage-init='{"tabs":{"openedState":"active"}}'>
+                            <div class="data item title" aria-labeledby="tab-label-featured-title"
+                                data-role="collapsible" id="tab-label-featured">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#featured"
+                                    id="tab-label-featured-title">Produkte letre</a>
+                            </div>
+                            <div class="data item content" id="featured" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured_product" product_count="4" column_count="4" category_id="53" aspect_ratio="0" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Kompjuter</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="86" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Dëgjuese</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" category_id="363" column_count="4" aspect_ratio="0" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Libra</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="62" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Gaming</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="189" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
+                                id="tab-label-latest">
+                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
+                                    id="tab-label-latest-title">Smartphone</a>
+                            </div>
+                            <div class="data item content" id="latest" data-role="content">
+                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="109" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
+        <h2 class="filterproduct-title"><span class="content"><strong>MATERIAL SHKOLLOR</strong></span></h2>
+        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="197" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+    </div>
+
+
+
     <div class="bg-grey-gradient" style="padding-top: 20px;">
         <div id="main-slider-demo-25">
             <div class="owl-carousel owl-middle-narrow">
@@ -972,330 +1295,96 @@
             </script>
         </div>
     </div>
-<div class="banner-container">
-    <div id="banner-slider-demo-22" class="owl-carousel owl-banner-carousel" data-slider-id="1">
-        <!-- <div class="item" style="background:url({{media url="smartwave/porto/homepage/22/BANNERI_SHKOLLOR_2.jpg"}})  center center no-repeat;background-size:100% 100%;">
-        <div class="container" style="position:relative;height:532px;">
-            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
-                <h5>Start the Revolution</h5>
-                <h2>drone pro 4</h2>
-                <h5>From <strong>$499</strong></h5>
-                <p><a class="btn" href="#">Buy Now</a></p>
-            </div>
-        </div>
-    </div>  -->
-        <!-- <div class="item" style="background:url({{media url="wysiwyg/smartwave/porto/homepage/22/BANNERI_SHKOLLOR_3.jpg"}})  center center no-repeat;background-size:auto auto;">
-        <div class="container" style="position:relative;height:532px;">
-            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
-                <h5>Start the Revolution</h5>
-                <h2>drone pro 4</h2>
-                <h5>From <strong>$499</strong></h5>
-                <p><a class="btn" href="#">Buy Now</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="item" style="background:url({{media url="wysiwyg/smartwave/porto/homepage/22/home_slide3.jpg"}})  center center no-repeat;background-size:100% 100%;">
-        <div class="container" style="position:relative;height:532px;">
-            <div class="content" style="position:absolute;z-index:1;top: 50%;left: 0;text-align: left;padding-left: 15px;transform: translateY(-50%);">
-                <h5>Start the Revolution</h5>
-                <h2>drone pro 4</h2>
-                <h5>From <strong>$499</strong></h5>
-                <p><a class="btn" href="#">Buy Now</a></p>
-            </div>
-        </div>
-    </div>
-    </div> -->
-        <div class="banner-thumbs-container">
-            <div class="container">
-                <!-- <div class="owl-thumbs" data-slider-id="1">
-            <button class="owl-thumb-item active">Drones</button>
-            <button class="owl-thumb-item">Phones</button>
-            <button class="owl-thumb-item">Accessories</button>
-        </div> -->
-            </div>
-        </div>
-        <script type="text/javascript">
-            require([
-                'jquery',
-                'owl.carousel/owl.carousel.min'
-            ], function ($) {
-                var banner_owl = $("#banner-slider-demo-22");
-                banner_owl.owlCarousel({
-                    items: 1,
-                    autoplay: true,
-                    autoplayTimeout: 5000,
-                    autoplayHoverPause: true,
-                    dots: false,
-                    nav: false,
-                    navRewind: true,
-                    animateIn: 'fadeIn',
-                    animateOut: 'fadeOut',
-                    loop: true,
-                    lazyLoad: true,
-                    navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"],
-                    thumbs: true,
-                    thumbImage: false,
-                    thumbsPrerendered: true,
-                    thumbContainerClass: 'owl-thumbs',
-                    thumbItemClass: 'owl-thumb-item'
-                });
-            });
-        </script>
-    </div>
-    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
-        <a href="https://www.smardonline.com/material-per-zyre/promo.html"><h2 class="filterproduct-title"><span class="content"><strong>VULA</strong></span></h2></a>
-        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="241" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
-    </div>  
-    <div id="home-content-slider-demo-20" class="owl-carousel owl-bottom-narrow owl-banner-carousel">
-        <div class="item" style="position:relative;">
-            <a href="https://www.smardonline.com/material-per-zyre/pjisje-organizimi-dhe-arkivimi/dosje.html">
-                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/blackfriday2.png"}}" alt="" />
-            </a>
-            <!-- <div class="content" style="position:absolute;right:15%;top:20%">
-    <h3>Adidas Ultra Boost</h3>
-    <p><img src="{{media url="wysiwyg/smartwave/porto/homepage/20/content/shoes.png"}}" alt="" /></p>
-    <a href="#">Shop Now</a>
-    </div> -->
-        </div>
-        <div class="item" style="position:relative;">
-            <a href="">
-                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/regjistrator1.jpg"}}" alt="" />
-            </a>
-            <!-- <div class="content" style="position:absolute;right:15%;top:20%">
-    <h3>Adidas Ultra Boost</h3>
-    <p><img src="{{media url="wysiwyg/smartwave/porto/homepage/20/content/shoes.png"}}" alt="" /></p>
-    <a href="#">Shop Now</a>
-    </div> -->
-        </div>
-        <div class="item" style="position:relative;">
-            <a href="">
-                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/a4.jpg"}}" alt="" />
-            </a>
-            <!-- <div class="content" style="position:absolute;right:15%;top:20%">
-    <h3>Adidas Ultra Boost</h3>
-    <p><img src="{{media url="wysiwyg/smartwave/porto/homepage/20/content/shoes.png"}}" alt="" /></p>
-    <a href="#">Shop Now</a>
-    </div> -->
-        </div>
-    </div>
-    <script type="text/javascript">
-        require([
-            'jquery',
-            'owl.carousel/owl.carousel.min'
-        ], function ($) {
-            var owl_20 = $("#home-content-slider-demo-20").owlCarousel({
-                items: 1,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true,
-                dots: true,
-                navRewind: true,
-                animateIn: 'fadeIn',
-                animateOut: 'fadeOut',
-                loop: true,
-                nav: false,
-                navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"]
-            });
-        });
-    </script>
-    <div style="padding: 0 15px;margin-bottom: 50px;">
-        <script type="text/javascript">
-            require([
-                'jquery',
-                'owl.carousel/owl.carousel.min'
-            ], function ($) {
-                $("#featured_product .owl-carousel").owlCarousel({
-                    autoplay: true,
-                    autoplayTimeout: 5000,
-                    autoplayHoverPause: true,
-                    loop: true,
-                    navRewind: true,
-                    margin: 0,
-                    nav: false,
-                    navText: ["<em class='porto-icon-left-open-huge'></em>", "<em class='porto-icon-right-open-huge'></em>"],
-                    dots: true,
-                    responsive: {
-                        0: {
-                            items: 2
-                        },
-                        768: {
-                            items: 3
-                        },
-                        992: {
-                            items: 4
-                        },
-                        1200: {
-                            items: 6
-                        }
-                    }
-                });
-            });
-        </script>
-    </div>
-    <!-- <div style="background-color: #f4f4f4;">
-    <div class="container" style="padding-top: 3.5vw;padding-bottom: 2.5vw;">
-    <div id="category-slider-demo-22" style="margin-left: -10px;margin-right: -10px;">
-        <div class="owl-carousel">
-            <div class="item">
-                <a href="#" class="shop-by-cat-item cat-has-icon">
-                    <span class="cat-detail">
-                        <i class="porto-new-icon-category-fashion"></i>
-                        <h3>Modë</h3>
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="shop-by-cat-item cat-has-icon">
-                    <span class="cat-detail">
-                        <i class="porto-new-icon-category-electronics"></i>
-                        <h3>Elektronikë</h3>
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="shop-by-cat-item cat-has-icon">
-                    <span class="cat-detail">
-                        <i class="porto-new-icon-category-gifts"></i>
-                        <h3>Dhurata</h3>
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="shop-by-cat-item cat-has-icon">
-                    <span class="cat-detail">
-                        <i class="porto-new-icon-category-garden"></i>
-                        <h3>Kopësht</h3>
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="shop-by-cat-item cat-has-icon">
-                    <span class="cat-detail">
-                        <i class="porto-new-icon-category-music"></i>
-                        <h3>Muzikë</h3>
-                    </span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="shop-by-cat-item cat-has-icon">
-                    <span class="cat-detail">
-                        <i class="porto-new-icon-category-motors"></i>
-                        <h3>Vetura</h3>
-                    </span>
-                </a>
-            </div>
-        </div>
-        <script type="text/javascript">
-        require([
-            'jquery',
-            'owl.carousel/owl.carousel.min'
-        ], function ($) {
-            $("#category-slider-demo-22 .owl-carousel").owlCarousel({
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true,
-                margin: 0,
-                nav: false,
-                navText: ["<em class='porto-icon-left-open-big'></em>","<em class='porto-icon-right-open-big'></em>"],
-                dots: false,
-                loop: false,
-                responsive: {
-                    0: {
-                        items:2
-                    },
-                    640: {
-                        items:3
-                    },
-                    768: {
-                        items:4
-                    },
-                    992: {
-                        items:5
-                    },
-                    1200: {
-                        items:6
-                    }
-                }
-            });
-        });
-        </script>
-    </div>
-    </div>
-    </div> -->
-    <div class="special-offers-section" style="background-color: #f4f4f4;">
-        <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2 class="filterproduct-title" style="padding-bottom: 10px;margin-bottom: 30px;"><span
-                            class="content"><strong>Oferta Speciale</strong></span></h2>
-                    <a href="#"><img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/monitor.jpg"}}"
-                            alt="" /></a>
+    <div style="background-color: #f4f4f4;padding: 50px 0;">
+        <div class="container">
+            <h2 class="filterproduct-title"><span class="content"><strong>Best Sellers Books</strong></span><a href="#" class=""><span style="padding: 1rem;">VIEW ALL PRODUCTS</span><i class="fas fa-long-arrow-alt-right"></i></a></h2>
+            <div class="row no-padding" style="margin: -1px;">
+                <div class="col-md-4" style="padding: 1px !important;">
+                    <div style="padding: 50px 0;background-color: #fff;height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;">
+                        <h5 style="font-size: 18px;color: rgba(34,37,41,0.6);line-height: 1;text-align: center;font-weight:200;margin: 0;margin-bottom: 4px;"><i>BOOK CLUB</i></h5>
+                        <h2 style="font-size: 28px;line-height: 32px;text-align: center;font-weight:600;color: #222529;letter-spacing: -0.24px;margin: 0;margin-bottom: 32px;padding: 0 15%;">A selection with only the best books</h2>
+                        <p style="margin-bottom: 43px;"><img src="{{media url="wysiwyg/smartwave/porto/homepage/25/shop25_book_img.png"}}" alt="" /></p>
+                        <p style="margin: 0;"><a href="#" class="btn" style="background-color: #F46428;color: #fff;font-size: 16px;font-weight: 500;line-height: 1.4;padding: 13px 32px;"><span>EXPLORE BOOKS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                    </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="filterproducts-tab" style="padding-top: 10px;">
-                        <div class="data items" data-mage-init='{"tabs":{"openedState":"active"}}'>
-                            <div class="data item title" aria-labeledby="tab-label-featured-title"
-                                data-role="collapsible" id="tab-label-featured">
-                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#featured"
-                                    id="tab-label-featured-title">Produkte letre</a>
+                <div class="col-md-8 products-pd-1" style="padding: 1px !important;">
+                    {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="8" column_count="4" aspect_ratio="1" image_width="250" product_type="1" template="grid.phtml"}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #fff;padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="margin-bottom: 48px;">
+                    <div class="column-inner">
+                        <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner1.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                            <div class="col-auto" style="padding-right: 24px !important;">
+                                <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Award Winners</h2>
+                                <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">12 Books</p>
+                                <p style="margin: 0;"><a href="#" class="btn" style="background-color: #F46428;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
                             </div>
-                            <div class="data item content" id="featured" data-role="content">
-                                {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured_product" product_count="4" column_count="4" category_id="53" aspect_ratio="0" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 48px;">
+                    <div class="column-inner">
+                        <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner2.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                            <div class="col-auto" style="padding-right: 24px !important;">
+                                <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Deals In Books</h2>
+                                <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">21 Books</p>
+                                <p style="margin: 0;"><a href="#" class="btn" style="background-color: #fe1656;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
                             </div>
-                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
-                                id="tab-label-latest">
-                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
-                                    id="tab-label-latest-title">Kompjuter</a>
-                            </div>
-                            <div class="data item content" id="latest" data-role="content">
-                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="86" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
-                            </div>
-                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
-                                id="tab-label-latest">
-                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
-                                    id="tab-label-latest-title">Dëgjuese</a>
-                            </div>
-                            <div class="data item content" id="latest" data-role="content">
-                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" category_id="363" column_count="4" aspect_ratio="0" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
-                            </div>
-                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
-                                id="tab-label-latest">
-                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
-                                    id="tab-label-latest-title">Libra</a>
-                            </div>
-                            <div class="data item content" id="latest" data-role="content">
-                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="62" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
-                            </div>
-                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
-                                id="tab-label-latest">
-                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
-                                    id="tab-label-latest-title">Gaming</a>
-                            </div>
-                            <div class="data item content" id="latest" data-role="content">
-                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="189" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
-                            </div>
-                            <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
-                                id="tab-label-latest">
-                                <a class="data switch" tabindex="-1" data-toggle="switch" href="#latest"
-                                    id="tab-label-latest-title">Smartphone</a>
-                            </div>
-                            <div class="data item content" id="latest" data-role="content">
-                                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="4" column_count="4" aspect_ratio="0" category_id="109" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 48px;">
+                    <div class="column-inner">
+                        <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner3.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                            <div class="col-auto" style="padding-right: 24px !important;">
+                                <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Most Gifted</h2>
+                                <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">38 Books</p>
+                                <p style="margin: 0;"><a href="#" class="btn" style="background-color: #0590b3;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>Featured Books</strong></span></h2>
+            {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="1" image_width="250" product_type="3" template="grid.phtml"}}
         </div>
     </div>
-    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
-        <h2 class="filterproduct-title"><span class="content"><strong>MATERIAL SHKOLLOR</strong></span></h2>
-        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="197" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+    <div style="padding: 60px 0;background: #F46428 url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_book.png"}}) center right no-repeat;background-size: 41% auto;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-5 col-7">
+                    <div style="display: inline-block;">
+                        <h5 style="font-size: 18px;color: rgba(255,255,255,0.6);line-height: 1.5;font-weight:200;margin: 0;"><i>AVAILABLE ONCE A YEAR</i></h5>
+                        <h2 style="font-weight:600;color:#ffffff;font-size:29px;line-height:40px;margin: 0;">Get 30% off on orders over $299</h2>
+                        <p style="font-weight:500;color: #ffffff;font-size:12px;line-height:16px;text-align:right;margin: 0;">* SELECTED BOOKS</p>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-3 col-7">
+                    <a href="#" class="btn" style="background-color: #383f48;color: #fff;font-size: 16px;font-weight: 500;line-height: 1.4;padding: 13px 32px;"><span>EXPLORE BOOKS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
-        <h2 class="filterproduct-title"><span class="content"><strong>SMARTPHONE & TABLET</strong></span></h2>
-        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="109" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+    <div style="background-color: #f4f4f4;padding: 50px 0;">
+        <div class="container">
+            <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>Recent Books</strong></span></h2>
+            {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="1" image_width="250" product_type="3" template="grid.phtml"}}
+        </div>
     </div>
+    <!-- <div style="background-color: #fff;padding: 50px 0 55px;text-align: center;">
+        <div class="container">
+            <p style="margin-bottom: 8px;"><i class="far fa-envelope" style="font-size: 30px; line-height: 1; color: #333;"></i></p>
+            <h2 style="color: #222529;font-size: 24px;line-height: 30px;letter-spacing: -0.24px;margin: 0;font-weight: 600;">Subscribe to Our Newsletter</h2>
+            <p style="color: #777;font-size: 14px;line-height: 25px;margin-bottom: 24px;">Get all the latest information on Events, Sales and Offers.</p>
+            {{block class="Magento\Newsletter\Block\Subscribe" name="home.newsletter" template="subscribe_form_footer.phtml"}}
+        </div>
+    </div>
+     -->
     <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
         <div class="row home-ads" style="margin-bottom: 16px;">
             <div class="col-lg-6">
@@ -1326,15 +1415,6 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
-            <h2 class="filterproduct-title"><span class="content"><strong> Kompjuterë & Elektronikë </strong></span>
-            </h2>
-            {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="86" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
-        </div>
-
-        <h2 class="filterproduct-title"><span class="content"><strong>PRODUKTE TË REJA</strong></span></h2>
-        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest" aspect_ratio="0" column_count="6" product_count="6" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
-    </div>
     
     <div class="container home-subcats" style="padding-top: 0;padding-bottom: 2.5vw;">
         <div class="row">
@@ -1421,10 +1501,6 @@
         </div>
     </div>
     
-    <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
-        <h2 class="filterproduct-title"><span class="content"><strong>Aksesorë</strong></span></h2>
-        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="821" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
-    </div>
 
     <div style="padding-top: 50px; padding-bottom: 50px; background-color:#f4f4f4;" class="custom-support">
         <div class="container">
@@ -1456,7 +1532,7 @@
             </div>
         </div>
     </div>
-    <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
+    <!-- <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
         <div class="row">
             <div class="col-md-6 col-lg-3">
                 <h2 class="filterproduct-title" style="background-image:none;margin-top:20px;margin-bottom:20px;"><span
@@ -1478,7 +1554,7 @@
                         class="content"><strong>Të fundit</strong></span></h2>
                 {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_small_list" product_count="3" aspect_ratio="0" image_width="212" image_height="212" template="small_list.phtml"}}
             </div>
-        </div>
+        </div> -->
         <div class="container" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
             <h2 class="filterproduct-title"><span class="content"><strong>MË SHUMË PRODUKTE</strong></span></h2>
             {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
