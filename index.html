@@ -77,13 +77,19 @@
             font-size: 36px;
         }
     }
+    @media (max-width: 767px){
+        .navigation a {
+            color: #777 !important;
+        }
+    }
 
     @media (min-width: 768px)
         {
-        .row:not(:last-child){
+        .row-banners{
             margin-top: -7% !important;
             margin-bottom: 3% !important;
         }
+       
         .col-md-3{
             z-index: 1;
             flex: 0 0 24%;
@@ -100,7 +106,7 @@
     }
     
     @media (max-width: 600px) {
-        .row:not(:last-child){
+        .row:not(:first-child){
         margin-top: -7% !important;
         margin-bottom: 3% !important;
 
@@ -421,7 +427,7 @@
         });
     });
 </script>
-<div class="row" style="margin:0;">
+<div class="row row-banners" style="margin:0;">
     <div class="col-md-3 col-6" style="padding:0;">
         <a class="image-link" href="https://www.smardonline.com/dell-alienware-25-aw2521hfl-240hz.html">
             <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/BAN1.jpg"}}" alt="" />
@@ -1354,7 +1360,7 @@
                 </div>
             </div>
             <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>Featured Books</strong></span></h2>
-            {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="1" image_width="250" product_type="3" template="grid.phtml"}}
+            {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="0" image_width="250" product_type="1" template="grid.phtml"}}
         </div>
     </div>
     <div style="padding: 60px 0;background: #F46428 url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_book.png"}}) center right no-repeat;background-size: 41% auto;">
@@ -1376,7 +1382,7 @@
     <div style="background-color: #f4f4f4;padding: 50px 0;">
         <div class="container">
             <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>Recent Books</strong></span></h2>
-            {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="1" image_width="250" product_type="3" template="grid.phtml"}}
+            {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="0" image_width="250" product_type="14" template="grid.phtml"}}
         </div>
     </div>
     <!-- <div style="background-color: #fff;padding: 50px 0 55px;text-align: center;">

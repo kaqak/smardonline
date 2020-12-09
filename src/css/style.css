@@ -949,6 +949,7 @@ border-radius: 0 5px 5px 0;
 .product-label.sale-label {
     background-color: #f36427 !important;
 }
+
 @media only screen and (max-width: 767px){
     
     .product-addto-links .action{
