@@ -1,3 +1,4 @@
+
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
@@ -20,8 +21,11 @@
         logged_in_greeting="Përshëndetje! Si mund të ju ndihmojmë?"
         logged_out_greeting="Përshëndetje! Si mund të ju ndihmojmë?">
     </div>
-    <!-- ########################### -->
-    <style type="text/css">
+
+<style type="text/css">
+  #banner-slider-demo-12{
+    display: none;
+  }
         .page-main {
             max-width: 100%;
             padding: 0;
@@ -331,13 +335,25 @@
             border-color: #f36427 !important;
             border-radius: 20px !important;
         }
+        
+    </style>
+
+    <style>
+        @media (max-width: 768px) {
+            #banner-slider-demo-11{
+                display: none;
+            }
+            #banner-slider-demo-12{
+                display: block;
+            }
+        }
     </style>
     <div id="banner-slider-demo-11" class="owl-carousel owl-banner-carousel owl-middle-narrow">
                 <div class="item"
-            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/festat_e_fundvitit.jpg"}}) center center no-repeat;background-size:100%;">
+            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/SSDMR.png"}}) center center no-repeat;background-size:100%;">
             <div class="container" style="position:relative">
                 <a
-                    href="">
+                    href="https://www.smardonline.com/elektronike/memory-storage/ssd.html">
                     <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
                 </a>
                 <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
@@ -347,10 +363,10 @@
             </div>
         </div>
         <div class="item"
-            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/12121s.png"}}) center center no-repeat;background-size:cover;">
+            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/LIBR1.jpg"}}) center center no-repeat;background-size:cover;">
             <div class="container" style="position:relative">
                 <a
-                    href="https://www.smardonline.com/material-per-zyre/te-tjera/vule.html">
+                    href="https://www.smardonline.com/libra.html">
                     <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
                 </a>
                 <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
@@ -360,9 +376,9 @@
             </div>
         </div>
         <div class="item"
-            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/PROMOs.png"}}) center center no-repeat;background-size:cover;">
+            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/colop.png"}}) center center no-repeat;background-size:cover;">
             <div class="container" style="position:relative">
-                <a href="https://www.smardonline.com/material-per-zyre/promo.html">
+                <a href="https://www.smardonline.com/material-per-zyre/te-tjera/vule.html">
                     <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
                 </a>
                 <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
@@ -371,34 +387,48 @@
                 </div>
             </div>
         </div>
-        <div class="item"
-            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/2.jpg"}}) center center no-repeat;background-size:cover;">
-            <div class="container" style="position:relative">
-                <a href="https://www.smardonline.com/kompjuter-dhe-elektronike.html">
-                    <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
-                </a>
-                <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
-                    <div class="container" style="text-align: center;padding:0;">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="item"
-            style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/LIBRI11.jpg"}}) center center no-repeat;background-size:100%;">
-            <div class="container" style="position:relative">
-                <a href="https://www.smardonline.com/libra-dhe-lule.html">
-                    <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/img.png"}}" alt="">
-                </a>
-                <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
-                    <div class="container" style="text-align: center;padding:0;">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
     </div>
+
+    <div id="banner-slider-demo-12" class="owl-carousel owl-banner-carousel owl-middle-narrow">
+        <div class="item"
+    style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/ssdMobile.png"}}) center center no-repeat;background-size:100%;">
+    <div class="container" style="position:relative">
+        <a
+            href="https://www.smardonline.com/elektronike/memory-storage/ssd.html">
+            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/imgMob.png"}}" alt="">
+        </a>
+        <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
+            <div class="container" style="text-align: center;padding:0;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item"
+    style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/libriMobile.png"}}) center center no-repeat;background-size:cover;">
+    <div class="container" style="position:relative">
+        <a
+            href="https://www.smardonline.com/libra.html">
+            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/imgMob.png"}}" alt="">
+        </a>
+        <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
+            <div class="container" style="text-align: center;padding:0;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item"
+    style="background:url({{media url="wysiwyg/smartwave/porto/homepage/03/content/colop_mobile.png"}}) center center no-repeat;background-size:cover;">
+    <div class="container" style="position:relative">
+        <a href="https://www.smardonline.com/material-per-zyre/te-tjera/vule.html">
+            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/imgMob.png"}}" alt="">
+        </a>
+        <div class="slide-2" style="position: absolute; bottom: 24%; width:100%;left:0;">
+            <div class="container" style="text-align: center;padding:0;">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
     <script type="text/javascript">
         require([
             'jquery',
@@ -419,25 +449,45 @@
             });
         });
     </script>
+    <script type="text/javascript">
+        require([
+            'jquery',
+            'owl.carousel/owl.carousel.min'
+        ], function ($) {
+            $("#banner-slider-demo-12").owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: true,
+                navRewind: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                loop: true,
+                navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"]
+            });
+        });
+    </script>
     <div class="row row-banners" style="margin:0;">
         <div class="col-md-3 col-6" style="padding:0;">
-            <a class="image-link" href="https://www.smardonline.com/dell-alienware-25-aw2521hfl-240hz.html">
-                <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/BAN1.jpg"}}" alt="" />
+            <a class="image-link" href="https://www.smardonline.com/art/ngjyra.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/NGJYROSE.png"}}" alt="" />
             </a>
         </div>
         <div class="col-md-3 col-6" style="padding:0;">
-            <a class="image-link" href="https://www.smardonline.com/dell-alienware-25-aw2521hfl-240hz.html">
-                <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/BAN2.jpg"}}" alt="" />
+            <a class="image-link" href="https://www.smardonline.com/art.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/VIZATO.png"}}" alt="" />
             </a>
         </div>
         <div class="col-md-3 col-6" style="padding:0;">
-            <a class="image-link" href="https://www.smardonline.com/apacer-ssd-120-gb-sata-iii-as340-write-500mb-s.html">
-                <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/bbb1.jpg"}}" alt="" />
+            <a class="image-link" href="https://www.smardonline.com/material-per-zyre/pajisje-dhe-artikuj-higjienik/shpuese.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/HEFT.png"}}" alt="" />
             </a>
         </div>
         <div class="col-md-3 col-6" style="padding:0;">
-            <a class="image-link" href="https://www.smardonline.com/apacer-ssd-120-gb-sata-iii-as340-write-500mb-s.html">
-                <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/bb2.jpg"}}" alt="" />
+            <a class="image-link" href="https://www.smardonline.com/material-per-zyre/pajisje-dhe-artikuj-higjienik/shpuese.html">
+                <img src="{{media url="wysiwyg/smartwave/porto/homepage/04/slider/MAKINA.png"}}" alt="" />
             </a>
         </div>
     </div>
@@ -446,8 +496,8 @@
         {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" column_count="6" category_id="961" product_count="12" aspect_ratio="0" image_width="300" image_height="300" product_type="1" template="owl_list.phtml"}}
     </div>
     <div class="container">
-        <a href="https://www.smardonline.com/material-per-zyre/promo.html"><h2 class="filterproduct-title"><span class="content"><strong>PROMO</strong></span></h2></a>
-        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="936" image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
+        <a href="https://www.smardonline.com/elektronike/memory-storage.html"><h2 class="filterproduct-title"><span class="content"><strong>ELEKTRONIKË</strong></span></h2></a>
+        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" aspect_ratio="0" column_count="6" product_count="6" category_id="968   " image_width="212" image_height="212" product_type="1" template="grid.phtml"}}
     </div>
 
     <script type="text/javascript">
@@ -641,6 +691,10 @@
             .category-product-item .cat-detail h5 {
                 font-size: 12px;
             }
+            .category-product-item .cat-detail > a{
+            margin-top: -1%;
+
+            }
         }
         #main-slider-demo-25 .products-grid .product-labels, #main-slider-demo-25 .products-grid .product-item .product-item-inner, #main-slider-demo-25 .products-grid .product-item .product-item-info .weltpixel-quickview.weltpixel_quickview_button_v2 {
             display: none;
@@ -719,84 +773,14 @@
     <div class="container owl-top-narrow" id="new_product" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
         <a href="https://www.smardonline.com/material-per-zyre/te-tjera/vule.html"><h2 class="filterproduct-title"><span class="content"><strong>VULA</strong></span></h2></a>
         {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" column_count="6" category_id="241" product_count="10" aspect_ratio="0" image_width="300" image_height="300" product_type="1" template="owl_list.phtml"}}
-    </div>  
-        <div id="home-content-slider-demo-20" class="owl-carousel owl-bottom-narrow owl-banner-carousel">
-            <div class="item" style="position:relative;">
-                <a href="https://www.smardonline.com/pe-elon-musk.html">
-                    <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/libri_elon_musk.png"}}" alt="" />
-                </a>    
-            </div>
-            <div class="item" style="position:relative;">
-                <a href="">
-                    <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/regjistrator1.jpg"}}" alt="" />
-                </a>               
-            </div>
-            <div class="item" style="position:relative;">
-                <a href="">
-                    <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/a4.jpg"}}" alt="" />
-                </a>
-            </div>
-        </div>
-        <script type="text/javascript">
-            require([
-                'jquery',
-                'owl.carousel/owl.carousel.min'
-            ], function ($) {
-                var owl_20 = $("#home-content-slider-demo-20").owlCarousel({
-                    items: 1,
-                    autoplay: true,
-                    autoplayTimeout: 5000,
-                    autoplayHoverPause: true,
-                    dots: true,
-                    navRewind: true,
-                    animateIn: 'fadeIn',
-                    animateOut: 'fadeOut',
-                    loop: true,
-                    nav: false,
-                    navText: ["<em class='porto-icon-chevron-left'></em>", "<em class='porto-icon-chevron-right'></em>"]
-                });
-            });
-        </script>
-        <div style="padding: 0 15px;">
-            <script type="text/javascript">
-                require([
-                    'jquery',
-                    'owl.carousel/owl.carousel.min'
-                ], function ($) {
-                    $("#featured_product .owl-carousel").owlCarousel({
-                        autoplay: true,
-                        autoplayTimeout: 5000,
-                        autoplayHoverPause: true,
-                        loop: true,
-                        navRewind: true,
-                        margin: 0,
-                        nav: false,
-                        navText: ["<em class='porto-icon-left-open-huge'></em>", "<em class='porto-icon-right-open-huge'></em>"],
-                        dots: true,
-                        responsive: {
-                            0: {
-                                items: 2
-                            },
-                            768: {
-                                items: 3
-                            },
-                            992: {
-                                items: 4
-                            },
-                            1200: {
-                                items: 6
-                            }
-                        }
-                    });
-                });
-            </script>
-        </div>
-        <div class="special-offers-section" style="background-color: #f4f4f4;">
+    </div>
+    
+        <div class="special-offers-section" style="background-color: #fff;">
             <div class="container" style="padding-top: 2.5vw;padding-bottom: 2.5vw;">
                 <div class="row">
                     <div class="col-lg-4">
                         <a href="https://www.smardonline.com/art.html"><h2 class="filterproduct-title"><span class="content"><strong>ART</strong></span></h2></a>
-                        <a href="https://www.smardonline.com/colop-vule-pocket-r30-109298.html"><img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/vula_banner.png"}}"
+                        <a href="https://www.smardonline.com/art.html"><img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/artdekor.png"}}"
                                 alt="" /></a>
                     </div>
                     <div class="col-lg-8">
@@ -808,7 +792,7 @@
                                         id="tab-label-featured-title">Pëlhurë</a>
                                 </div>
                                 <div class="data item content" id="featured" data-role="content">
-                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="1" category_id="349" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="0" category_id="349" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
                                 
                                 </div>
                                 <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
@@ -817,7 +801,7 @@
                                         id="tab-label-latest-title">Ngjyra</a>
                                 </div>
                                 <div class="data item content" id="latest" data-role="content">
-                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="1" category_id="804" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="0" category_id="804" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
                                 </div>
                                 <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
                                     id="tab-label-latest">
@@ -825,7 +809,7 @@
                                         id="tab-label-latest-title">Letër Dekor</a>
                                 </div>
                                 <div class="data item content" id="latest" data-role="content">
-                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" category_id="805" column_count="4" aspect_ratio="1" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" category_id="805" column_count="4" aspect_ratio="0" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
                                 </div>
                                 <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
                                     id="tab-label-latest">
@@ -833,7 +817,7 @@
                                         id="tab-label-latest-title">Mbajtëse</a>
                                 </div>
                                 <div class="data item content" id="latest" data-role="content">
-                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="1" category_id="816" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="0" category_id="816" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
                                 </div>
                                 <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
                                     id="tab-label-latest">
@@ -841,7 +825,7 @@
                                         id="tab-label-latest-title">Brusha</a>
                                 </div>
                                 <div class="data item content" id="latest" data-role="content">
-                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="1" category_id="817" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="0" category_id="817" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
                                 </div>
                                 <div class="data item title" aria-labeledby="tab-label-latest-title" data-role="collapsible"
                                     id="tab-label-latest">
@@ -849,7 +833,7 @@
                                         id="tab-label-latest-title">Çanta & Zola</a>
                                 </div>
                                 <div class="data item content" id="latest" data-role="content">
-                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="1" category_id="818" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
+                                    {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" product_count="4" column_count="4" aspect_ratio="0" category_id="818" image_width="250" image_height="250" product_type="3" template="grid.phtml"}}
                                 </div>
                             </div>
                         </div>
@@ -869,7 +853,7 @@
                     <div class="porto-sicon-wrapper style_1">
                         <div class="porto-sicon-box left-icon">
                             <div class="porto-sicon-left">
-                                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/rsz_laptop.png"}}" alt="" />
+                                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/laptop.png"}}" alt="" />
                             </div>
                             <div class="porto-sicon-body">
                                 <div class="porto-sicon-header">
@@ -878,7 +862,7 @@
                                 </div>
                                 <div class="porto-sicon-description" style="">
                                     <a class="btn btn-dark"
-                                        href="https://www.smardonline.com/kompjuter-dhe-elektronike.html">Blej tani</a>
+                                        href="https://www.smardonline.com/elektronike.html">Blej tani</a>
                                 </div>
                             </div>
                         </div>
@@ -888,7 +872,7 @@
                     <div class="porto-sicon-wrapper style_1">
                         <div class="porto-sicon-box left-icon">
                             <div class="porto-sicon-left">
-                                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/rsz_iphone.png"}}" alt="" />
+                                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/iphone.png"}}" alt="" />
                             </div>
                             <div class="porto-sicon-body">
                                 <div class="porto-sicon-header">
@@ -898,7 +882,7 @@
                                 </div>
                                 <div class="porto-sicon-description" style="">
                                     <a class="btn btn-dark"
-                                        href="https://www.smardonline.com/telefona-dhe-aksesore.html">Blej tani</a>
+                                        href="https://www.smardonline.com/smartphone-tablet.html">Blej tani</a>
                                 </div>
                             </div>
                         </div>
@@ -908,7 +892,7 @@
                     <div class="porto-sicon-wrapper style_1">
                         <div class="porto-sicon-box left-icon">
                             <div class="porto-sicon-left">
-                                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/rsz_material.png"}}" alt="" />
+                                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/material.png"}}" alt="" />
                             </div>
                             <div class="porto-sicon-body">
                                 <div class="porto-sicon-header">
@@ -928,7 +912,7 @@
                     <div class="porto-sicon-wrapper style_1">
                         <div class="porto-sicon-box left-icon">
                             <div class="porto-sicon-left">
-                                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/rsz_ssd.png"}}" alt="" />
+                                <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/ssd.png"}}" alt="" />
                             </div>
                             <div class="porto-sicon-body">
                                 <div class="porto-sicon-header">
@@ -938,7 +922,7 @@
                                 </div>
                                 <div class="porto-sicon-description" style="">
                                     <a class="btn btn-dark"
-                                        href="https://www.smardonline.com/kompjuter-dhe-elektronike/memory-storage.html">Blej
+                                        href="https://www.smardonline.com/elektronike/memory-storage.html">Blej
                                         tani</a>
                                 </div>
                             </div>
@@ -950,7 +934,7 @@
 
             
 
-        <div style="padding-top: 50px; padding-bottom: 50px; background-color:#f4f4f4;" class="custom-support">
+        <div style="padding-top: 50px; padding-bottom: 50px; background-color:#fff;" class="custom-support">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4" style="margin: 25px 0;">
@@ -979,8 +963,8 @@
         </div>
         
         <div class="container owl-top-narrow" id="new_product" style="padding-top: 1.5vw;padding-bottom: 2.5vw;">
-            <a href="https://www.smardonline.com/elektronike.html"><h2 class="filterproduct-title"><span class="content"><strong>ELEKTRONIKË</strong></span></h2></a>
-            {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" column_count="6" category_id="86" product_count="10" aspect_ratio="0" image_width="300" image_height="300" product_type="1" template="owl_list.phtml"}}
+            <a href="https://www.smardonline.com/material-per-zyre/promo.html"><h2 class="filterproduct-title"><span class="content"><strong>PROMO</strong></span></h2></a>
+            {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="featured" column_count="6" category_id="936" product_count="10" aspect_ratio="0" image_width="300" image_height="300" product_type="1" template="owl_list.phtml"}}
         </div>
         <script type="text/javascript">
             require([
@@ -1264,104 +1248,72 @@
                 </script>
             </div>
         </div>
-        <div style="background-color: #f4f4f4;padding: 50px 0;">
+        
+        <div style="background-color: #fff;padding: 50px 0;">
             <div class="container">
-                <h2 class="filterproduct-title"><span class="content"><strong>Best Sellers Books</strong></span><a href="#" class=""><span style="padding: 1rem;">Shfaq të gjithë titujt</span><i class="fas fa-long-arrow-alt-right"></i></a></h2>
-                <div class="row no-padding" style="margin: -1px;">
-                    <div class="col-md-4" style="padding: 1px !important;">
-                        <div style="padding: 50px 0;background-color: #fff;height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;">
-                            <h5 style="font-size: 18px;color: rgba(34,37,41,0.6);line-height: 1;text-align: center;font-weight:200;margin: 0;margin-bottom: 4px;"><i>BOOK CLUB</i></h5>
-                            <!-- <h2 style="font-size: 28px;line-height: 32px;text-align: center;font-weight:600;color: #222529;letter-spacing: -0.24px;margin: 0;margin-bottom: 32px;padding: 0 15%;">A selection with only the best books</h2> -->
-                            <p style="margin-bottom: 43px;"><img src="{{media url="wysiwyg/smartwave/porto/homepage/25/shop25_book_img.png"}}" alt="" /></p>
-                            <p style="margin: 0;"><a href="#" class="btn" style="background-color: #F46428;color: #fff;font-size: 16px;font-weight: 500;line-height: 1.4;padding: 13px 32px;"><span>EXPLORE BOOKS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                <div class="row">
+                    <div class="col-md-4" style="margin-bottom: 48px;">
+                        <div class="column-inner">
+                            <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/03/content/libri_1.png"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                                <div class="col-auto" style="padding-right: 24px !important;">
+                                    <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">LETËRSI</h2>
+                                    <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">12 Books</p>
+                                    <p style="margin: 0;"><a href="#" class="btn" style="background-color: #F46428;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>SHFAQ KOLEKSIONIN</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-8 products-pd-1" style="padding: 1px !important;">
-                        {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="8" column_count="4" aspect_ratio="0" image_width="250" product_type="1" template="grid.phtml"}}
+                    <div class="col-md-4" style="margin-bottom: 48px;">
+                        <div class="column-inner">
+                            <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/03/content/libri_2.png"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                                <div class="col-auto" style="padding-right: 24px !important;">
+                                    <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">LIDERSHIP</h2>
+                                    <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">21 Books</p>
+                                    <p style="margin: 0;"><a href="#" class="btn" style="background-color: #fe1656;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>SHFAQ KOLEKSIONIN</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-bottom: 48px;">
+                        <div class="column-inner">
+                            <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/03/content/libri3.png"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
+                                <div class="col-auto" style="padding-right: 24px !important;">
+                                    <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">BIOGRAFI</h2>
+                                    <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">38 Books</p>
+                                    <p style="margin: 0;"><a href="#" class="btn" style="background-color: #0590b3;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>SHFAQ KOLEKSIONIN</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>BESTSELLER</strong></span></h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" category_id="339" product_count="12" column_count="6" aspect_ratio="0" image_width="250" product_type="1" template="grid.phtml"}}
+            </div>
+        </div>
+        <div style="padding: 60px 0;background: #F46428 url({{media url="wysiwyg/smartwave/porto/homepage/25/LIBRI2.png"}}) center right no-repeat;background-size: 41% auto;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-5 col-7">
+                        <div style="display: inline-block;">
+                            <h5 style="font-size: 18px;color: rgba(255,255,255,0.6);line-height: 1.5;font-weight:200;margin: 0;"><i></i></h5>
+                            <h2 style="font-weight:600;color:#ffffff;font-size:29px;line-height:40px;margin: 0;">“When I have a little money, I buy books; and if I have any left, I buy food and clothes.”</h2>
+                            <p style="font-weight:500;color: #ffffff;font-size:12px;line-height:16px;text-align:right;margin: 0;">-Erasmus</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-3 col-7">
+                        <a href="#" class="btn" style="background-color: #383f48;color: #fff;font-size: 16px;font-weight: 500;line-height: 1.4;padding: 13px 32px;"><span>SHFLETO TITUJT</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <div style="background-color: #fff;padding: 50px 0;">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4" style="margin-bottom: 48px;">
-                        <div class="column-inner">
-                            <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner1.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
-                                <div class="col-auto" style="padding-right: 24px !important;">
-                                    <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Award Winners</h2>
-                                    <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">12 Books</p>
-                                    <p style="margin: 0;"><a href="#" class="btn" style="background-color: #F46428;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" style="margin-bottom: 48px;">
-                        <div class="column-inner">
-                            <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner2.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
-                                <div class="col-auto" style="padding-right: 24px !important;">
-                                    <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Deals In Books</h2>
-                                    <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">21 Books</p>
-                                    <p style="margin: 0;"><a href="#" class="btn" style="background-color: #fe1656;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" style="margin-bottom: 48px;">
-                        <div class="column-inner">
-                            <div class="row no-padding justify-content-end" style="background: url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_banner3.jpg"}}) no-repeat;background-size: cover;padding: 45px 0 30px;">
-                                <div class="col-auto" style="padding-right: 24px !important;">
-                                    <h2 style="font-size: 19px;line-height: 1;font-weight:600;margin: 0;margin-bottom: 8px;text-transform: uppercase;color: #fff;">Most Gifted</h2>
-                                    <p style="color: rgba(255,255,255,0.5);margin-bottom: 16px;">38 Books</p>
-                                    <p style="margin: 0;"><a href="#" class="btn" style="background-color: #0590b3;color: #fff;font-size: 12px;font-weight: 600;line-height: 1.4;padding: 9px 15px;"><span>VIEW COLLECTIONS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>Featured Books</strong></span></h2>
-                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="0" image_width="250" product_type="1" template="grid.phtml"}}
-            </div>
-        </div>
-        <div style="padding: 60px 0;background: #F46428 url({{media url="wysiwyg/smartwave/porto/homepage/25/shop25_home_book.png"}}) center right no-repeat;background-size: 41% auto;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-7 col-lg-5 col-7">
-                        <div style="display: inline-block;">
-                            <h5 style="font-size: 18px;color: rgba(255,255,255,0.6);line-height: 1.5;font-weight:200;margin: 0;"><i>AVAILABLE ONCE A YEAR</i></h5>
-                            <h2 style="font-weight:600;color:#ffffff;font-size:29px;line-height:40px;margin: 0;">Get 30% off on orders over $299</h2>
-                            <p style="font-weight:500;color: #ffffff;font-size:12px;line-height:16px;text-align:right;margin: 0;">* SELECTED BOOKS</p>
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-lg-3 col-7">
-                        <a href="#" class="btn" style="background-color: #383f48;color: #fff;font-size: 16px;font-weight: 500;line-height: 1.4;padding: 13px 32px;"><span>EXPLORE BOOKS</span><i class="fas fa-long-arrow-alt-right" style="margin-left: 10px;"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="background-color: #f4f4f4;padding: 50px 0;">
-            <div class="container">
-                <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>Recent Books</strong></span></h2>
-                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="6" column_count="6" aspect_ratio="0" image_width="250" product_type="1" template="grid.phtml"}}
+                <h2 class="filterproduct-title" style="margin-bottom: 10px;"><span class="content"><strong>TË FUNDIT</strong></span></h2>
+                {{block class="Smartwave\Filterproducts\Block\Home\LatestList" name="latest_product" product_count="12" column_count="6" aspect_ratio="0" image_width="250" product_type="1" template="grid.phtml"}}
             </div>
         </div>
         
         <div class="container" style="padding-top: 0;padding-bottom: 2.5vw;">
-            <div class="row home-ads" style="margin-bottom: 16px;">
-                <div class="col-lg-6">
-                    <div class="porto-ibanner">
-                        <a href="https://www.smardonline.com/ram-memorie-kingston-hyperx-fury-rgb-8gb-3200mhz.html">
-                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/b1.jpg"}}" alt="" /></a>                        
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="porto-ibanner">
-                        <a href="https://www.smardonline.com/pllake-ame-msi-b450m-a-pro-max-micro-atx.html">
-                            <img src="{{media url="wysiwyg/smartwave/porto/homepage/03/content/b2.jpg"}}" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </div>
         
             
             <div class="our-brands" style="margin-top:15px;">
@@ -1371,84 +1323,84 @@
                     <div class="owl-carousel">
                         <a href="https://acer.com">
                             <div class="item" style="padding:10px 0;"><img
-                                    src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_acer-01.png"}}" alt="" /></div>
+                                    src="{{media url="wysiwyg/smartwave/porto/brands/05/acer.png"}}" alt="" /></div>
                         </a>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_acme-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/acme.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_anp-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/anp.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_apple-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/apple.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_benq-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/benq.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_brother-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/brother.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_canon-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/canon.png"}}" alt="" /></div>
                                             <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_centropen-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/centropen.png"}}" alt="" /></div>
                         <a href="https://www.colop.com/">
                             <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_colop-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/colop.png"}}" alt="" /></div>
                         </a>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_dell-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/dell.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_disney-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/disney.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_dlink-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/dlink.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_epson-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/epson.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_eshark2-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/eshark.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_genius-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/genius.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_1hama-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/hama.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_havit-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/havit.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_hp-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/hp.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_imac-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/imac.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_interpano-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/interpano.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_kyocera-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/kyocera.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_lexmark-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/lexmark.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_manhatan-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/manhatan.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_maxell-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/maxwell.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_mediarangee-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/mediarange.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_philips-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/philips.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_printking-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/printking.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_radece-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/radece.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_1razer-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/razer.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_samsung-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/samsung.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_2sandisk-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/sandisk.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_sbox-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/sbox.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_spirit-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/spirit.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_statovac-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/statovac.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_tiptop-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/tiptop.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_toshiba-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/toshiba.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_wsh-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/whiteshark.png"}}" alt="" /></div>
                         <div class="item" style="padding:10px 0;"><img
-                                src="{{media url="wysiwyg/smartwave/porto/brands/05/rsz_xerox-01.png"}}" alt="" /></div>
+                                src="{{media url="wysiwyg/smartwave/porto/brands/05/xerox.png"}}" alt="" /></div>
                     </div>
                     <script type="text/javascript">
                         require([
