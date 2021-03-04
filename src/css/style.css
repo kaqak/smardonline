@@ -93,7 +93,7 @@ html {
   padding-right: 0;
 }
 .page-header.type2.header-newskin .minicart-wrapper .action.showcart:before {
-  content: "";
+  content: '';
   position: absolute;
   border: 2px solid;
   border-color: inherit;
@@ -310,7 +310,7 @@ html {
   box-shadow: 0 0 3px 1.5px #e5e5e5;
 }
 .product-item .tocart:before {
-  content: "\e87f";
+  content: '\e87f';
   font-size: 17px;
   vertical-align: middle;
 }
@@ -319,7 +319,7 @@ html {
 .product-item .action.towishlist:before,
 .product-social-links .action.towishlist:before,
 .table-comparison .action.towishlist:before {
-  content: "\e889";
+  content: '\e889';
 }
 @media (min-width: 1200px) {
   .products-grid.columns6 {
@@ -423,11 +423,11 @@ html {
   color: #222329;
 }
 .price-box .price {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   letter-spacing: 0;
   font-weight: 600;
 }
-.footer .social-icons [class^="porto-icon-"] {
+.footer .social-icons [class^='porto-icon-'] {
   color: #222529;
   font-size: 16px;
 }
@@ -439,18 +439,18 @@ html {
   text-align: center;
   border-radius: 20px;
 }
-.footer .social-icons a [class^="porto-icon-"] {
+.footer .social-icons a [class^='porto-icon-'] {
   color: inherit;
 }
-.footer .social-icons a[title="Facebook"]:hover {
+.footer .social-icons a[title='Facebook']:hover {
   background-color: #3b5a9a;
   color: #fff;
 }
-.footer .social-icons a[title="Twitter"]:hover {
+.footer .social-icons a[title='Twitter']:hover {
   background-color: #1aa9e1;
   color: #fff;
 }
-.footer .social-icons a[title="Linkedin"]:hover {
+.footer .social-icons a[title='Linkedin']:hover {
   background-color: #7c4a3a;
   color: #fff;
 }
@@ -472,7 +472,7 @@ html {
   padding: 0 0 18px;
 }
 .footer-bottom > .container:before {
-  content: "";
+  content: '';
   border-top: 1px solid #e1e1e1;
   display: block;
   margin-bottom: 18px;
@@ -551,7 +551,7 @@ html {
   color: #858585;
 }
 .filter-options-title:after {
-  content: "\f882";
+  content: '\f882';
   border: none;
   color: #21293c;
   font-size: 11px;
@@ -563,7 +563,7 @@ html {
   color: #21293c;
 }
 .active > .filter-options-title:after {
-  content: "\f883";
+  content: '\f883';
 }
 #ln_slider_price.ui-slider-horizontal {
   height: 3px;
@@ -584,11 +584,11 @@ html {
   padding-right: 20px;
 }
 .porto-icon-left-open-huge:before {
-  content: "\f802";
+  content: '\f802';
   color: #21293c;
 }
 .porto-icon-right-open-huge:before {
-  content: "\f801";
+  content: '\f801';
   color: #21293c;
 }
 .sidebar .owl-top-narrow .owl-theme .owl-controls {
@@ -621,7 +621,7 @@ html {
   padding: 0 20px;
 }
 .sidebar-filterproducts.custom-block + h2 + h5 {
-  font-family: "Open Sans" !important;
+  font-family: 'Open Sans' !important;
   font-weight: 600 !important;
   font-size: 14px !important;
   color: #7a7d82 !important;
@@ -745,7 +745,7 @@ html {
   padding: 0 10px;
 }
 .product-item .tocart:before {
-  content: "\e87f";
+  content: '\e87f';
   font-size: 17px;
   vertical-align: middle;
 }
@@ -885,10 +885,10 @@ html {
   border-color: #dae2e6;
 }
 .product-info-main .qty.field .qty-changer > a .porto-icon-up-dir:before {
-  content: "\f882";
+  content: '\f882';
 }
 .product-info-main .qty.field .qty-changer > a .porto-icon-down-dir:before {
-  content: "\f883";
+  content: '\f883';
 }
 .catalog-product-view:not(.weltpixel-quickview-catalog-product-view):not(.weltpixel_quickview-catalog_product-view)
   .box-tocart
@@ -899,7 +899,7 @@ html {
   font-weight: 400;
 }
 .box-tocart .action.tocart:before {
-  content: "\e87f";
+  content: '\e87f';
   font-family: porto-icons;
   margin-right: 7px;
   font-size: 16px;
@@ -966,11 +966,11 @@ html {
   margin-top: 7px;
 }
 .modes-mode:before {
-  content: "\e880";
+  content: '\e880';
   font-size: 14px;
 }
 .mode-list:before {
-  content: "\e87b";
+  content: '\e87b';
   font-size: 14px;
 }
 .products.wrapper ~ .toolbar .limiter {
@@ -1047,7 +1047,7 @@ header.page-header.type2 a.action.my-wishlist {
   }
   .page-header.type2.header-newskin .panel.header .header.links > li:after {
     border-right: 1px solid #e7e7e7;
-    content: "";
+    content: '';
     display: inline-block;
     vertical-align: middle;
     width: 1px;
@@ -1206,4 +1206,15 @@ header.page-header.type2 a.action.my-wishlist {
   .navigation a {
     color: #f36427 !important;
   }
+}
+.secondary-addto-links {
+  display: none;
+}
+.slick-arrow {
+  display: none !important;
+}
+.slick-slide {
+  border: 1px solid #e7e7e7 !important;
+  margin: 2px;
+  border-radius: 5px;
 }
